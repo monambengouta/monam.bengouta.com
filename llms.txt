@@ -1,0 +1,42 @@
+# Monam Ben Gouta — Human Agent v1.0
+> Senior Backend Engineer & Tech Lead | Tunis, TN · Remote-first
+
+## Who is this?
+
+Monam Ben Gouta is a Senior Backend Engineer and Tech Lead with 5+ years of experience building production-grade SaaS platforms, fintech systems, and API architectures. Based in Tunis, Tunisia (UTC+1). Available immediately for remote full-time, freelance, or project-based work.
+
+## Core Stack
+
+- **Languages**: Node.js, TypeScript, JavaScript
+- **Frameworks**: NestJS, Express, Hono, tRPC, React, Next.js, React Native
+- **Databases**: PostgreSQL, Redis, MongoDB, SQL Server
+- **DevOps**: Docker, GitHub Actions, Jenkins, GCP, AWS
+- **Specialties**: SaaS architecture, fintech systems, AI micro-services, multi-tenant platforms
+
+## Availability & Pricing
+
+- **Full-time**: 45,000–55,000 €/year (remote or hybrid)
+- **Freelance**: 350–500 €/day (4-day minimum, billed weekly)
+- **Project-based**: Custom scoped quote
+- **Available**: Immediately — no notice period
+
+## Notable Projects
+
+- **SMT Payment Platform** (We-Settle, 2025): Fintech gateway handling 150K+ txn/month, HashiCorp Vault, led team of 4
+- **Payload CRM** (Bysur, 2024): B2B insurance CRM with tRPC APIs, Zapier/n8n integration, 100% test coverage
+- **ByRate** (Bysur, 2024): ReactFlow visual workflow editor with Redis optimization
+- **Revcall.io** (HorizonLux, 2023): Review automation SaaS, 100+ businesses, $50K+ US revenue
+- **GptGold** (HorizonLux, 2023): 5 AI micro-services (OpenAI) deployed independently on AWS
+
+## Contact
+
+- **Email**: monaam.bengouta@gmail.com
+- **LinkedIn**: https://linkedin.com/in/monambengouta
+- **GitHub**: https://github.com/monambengouta
+- **Website**: https://monam.bengouta.com
+
+## Optional
+
+- **Languages spoken**: French, English, Arabic
+- **Timezone**: UTC+1 (overlaps well with Europe and MENA)
+- **Response time**: < 24 hours
