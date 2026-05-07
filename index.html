@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<!-- Anti-FOUC: apply theme before first paint -->
+<script>
+(function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
+</script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+<!-- ══ PRIMARY SEO ══ -->
+<title>Monam Ben Gouta — Senior Backend Engineer & Tech Lead | Tunisia · Remote</title>
+<meta name="description" content="Senior Backend Engineer and Tech Lead based in Tunis. Node.js, TypeScript, PostgreSQL, Redis, Docker. Available for full-time (45–55K€/yr), freelance (350–500€/day), or project-based work. Ships from day one."/>
+<meta name="keywords" content="Backend Engineer Tunisia, Node.js Developer Tunis, TypeScript Engineer, Tech Lead Remote, Fullstack Developer, SaaS Engineer, Fintech Developer, API Architect, PostgreSQL Redis Docker, Monam Ben Gouta"/>
+<meta name="author" content="Monam Ben Gouta"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://gouta.dev/"/>
+
+<!-- ══ OPEN GRAPH (LinkedIn, Facebook, WhatsApp) ══ -->
+<meta property="og:type" content="profile"/>
+<meta property="og:title" content="Monam Ben Gouta — Senior Backend Engineer · Tech Lead"/>
+<meta property="og:description" content="I build production-grade APIs, SaaS platforms, and fintech systems. Available for remote full-time or freelance work. Node.js · TypeScript · PostgreSQL · Redis · Docker."/>
+<meta property="og:url" content="https://gouta.dev/"/>
+<meta property="og:image" content="https://gouta.dev/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:site_name" content="Monam Ben Gouta · Human Agent v1.0"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="profile:first_name" content="Monam"/>
+<meta property="profile:last_name" content="Ben Gouta"/>
+
+<!-- ══ TWITTER CARD ══ -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Monam Ben Gouta — Senior Backend Engineer · Tech Lead"/>
+<meta name="twitter:description" content="Node.js · TypeScript · PostgreSQL · Redis · Docker. Available for remote full-time or freelance. Ships from day one."/>
+<meta name="twitter:image" content="https://gouta.dev/og-image.png"/>
+<meta name="twitter:creator" content="@gouta_dev"/>
+
+<!-- ══ THEME / BROWSER CHROME ══ -->
+<meta name="theme-color" content="#F8F7F4" media="(prefers-color-scheme: light)"/>
+<meta name="theme-color" content="#0F0D1A" media="(prefers-color-scheme: dark)"/>
+<meta name="color-scheme" content="light dark"/>
+<meta name="msapplication-TileColor" content="#5B21B6"/>
+
+<!-- ══ GEO / LOCAL SEO ══ -->
+<meta name="geo.region" content="TN-11"/>
+<meta name="geo.placename" content="Tunis, Tunisia"/>
+<meta name="geo.position" content="36.8065;10.1815"/>
+<meta name="ICBM" content="36.8065, 10.1815"/>
+
+<!-- ══ JSON-LD STRUCTURED DATA ══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Monam Ben Gouta",
+  "jobTitle": "Senior Backend Engineer & Tech Lead",
+  "description": "Senior Backend Engineer and Tech Lead specializing in Node.js, TypeScript, PostgreSQL, Redis, and Docker. Building SaaS platforms, fintech systems, and production-grade APIs.",
+  "url": "https://gouta.dev",
+  "image": "https://gouta.dev/og-image.png",
+  "email": "hi@gouta.dev",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tunis",
+    "addressCountry": "TN"
+  },
+  "knowsLanguage": ["French", "English", "Arabic"],
+  "knowsAbout": ["Node.js", "TypeScript", "PostgreSQL", "Redis", "Docker", "REST API", "tRPC", "SaaS", "Fintech", "Backend Architecture"],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Full-Time Employment",
+      "price": "45000",
+      "priceCurrency": "EUR",
+      "description": "Full-time senior backend engineer, remote or hybrid"
+    },
+    {
+      "@type": "Offer",
+      "name": "Freelance Day Rate",
+      "price": "350",
+      "priceCurrency": "EUR",
+      "description": "Freelance backend engineering, 4-day minimum"
+    }
+  ],
+  "sameAs": [
+    "https://github.com/monambengouta",
+    "https://linkedin.com/in/monambengouta"
+  ]
+}
+</script>
+
+<!-- ══ MCP AGENT DISCOVERY ══ -->
+<!-- This portfolio exposes a human API. MCP-compatible agents can parse
+     the structured endpoints below to understand capabilities, pricing,
+     availability, and how to initiate contact. -->
+<meta name="mcp:agent-type" content="human-engineer"/>
+<meta name="mcp:endpoints" content="/hire, /services, /projects, /contact"/>
+<meta name="mcp:stack" content="Node.js, TypeScript, PostgreSQL, Redis, Docker, tRPC, Prisma"/>
+<meta name="mcp:availability" content="immediate"/>
+<meta name="mcp:location" content="Tunis, TN · Remote-first · UTC+1"/>
+<link rel="alternate" type="application/ld+json" href="/mcp-manifest.json" title="MCP Agent Manifest"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F8F7F4;--bg2:#F0EEE9;--bg3:#E8E5DD;
+  --surface:#FFFFFF;--surface2:#FAFAF8;
+  --border:#E2DDD6;--border2:#C8C2B8;
+  --ink:#1A1714;--ink2:#5C5650;--ink3:#9B9690;
+  --violet:#5B21B6;--violet-b:#4C1D95;--violet-m:#7C3AED;
+  --violet-dim:#F5F3FF;--violet-mid:#DDD6FE;--violet-text:#3730A3;
+  --amber:#D97706;--red:#DC2626;--emerald:#059669;
+  --mono-bg:#0F0D1A;--mono-s:#171525;--mono-b:#252235;
+  --mono-t:#E2DEFF;--mono-dim:#6B6490;--mono-v:#C084FC;
+  --mono-g:#4ADE80;--mono-r:#F87171;--mono-y:#FDE047;--mono-b2:#7DD3FC;
+  --fh:'Outfit',sans-serif;--fb:'Space Grotesk',sans-serif;--fm:'JetBrains Mono',monospace;
+  --ease-out-expo:cubic-bezier(0.16,1,0.3,1);
+  --ease-spring:cubic-bezier(0.34,1.56,0.64,1);
+}
+
+/* ══ DARK MODE (system + [data-theme=dark]) ══ */
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F0D1A;--bg2:#131121;--bg3:#1A1828;
+  --surface:#171525;--surface2:#1E1C2E;
+  --border:#252235;--border2:#302D45;
+  --ink:#E2DEFF;--ink2:#8B84AD;--ink3:#4A4668;
+  --violet:#7C3AED;--violet-b:#6D28D9;--violet-m:#8B5CF6;
+  --violet-dim:rgba(91,33,182,.2);--violet-mid:rgba(124,58,237,.35);--violet-text:#A78BFA;
+  --amber:#FCD34D;--red:#F87171;--emerald:#34D399;
+  --nav-bg:rgba(15,13,26,.88);
+}}
+[data-theme="dark"]{
+  --bg:#0F0D1A;--bg2:#131121;--bg3:#1A1828;
+  --surface:#171525;--surface2:#1E1C2E;
+  --border:#252235;--border2:#302D45;
+  --ink:#E2DEFF;--ink2:#8B84AD;--ink3:#4A4668;
+  --violet:#7C3AED;--violet-b:#6D28D9;--violet-m:#8B5CF6;
+  --violet-dim:rgba(91,33,182,.2);--violet-mid:rgba(124,58,237,.35);--violet-text:#A78BFA;
+  --amber:#FCD34D;--red:#F87171;--emerald:#34D399;
+  --nav-bg:rgba(15,13,26,.88);
+}
+[data-theme="light"]{
+  --bg:#F8F7F4;--bg2:#F0EEE9;--bg3:#E8E5DD;
+  --surface:#FFFFFF;--surface2:#FAFAF8;
+  --border:#E2DDD6;--border2:#C8C2B8;
+  --ink:#1A1714;--ink2:#5C5650;--ink3:#9B9690;
+  --violet:#5B21B6;--violet-b:#4C1D95;--violet-m:#7C3AED;
+  --violet-dim:#F5F3FF;--violet-mid:#DDD6FE;--violet-text:#3730A3;
+  --amber:#D97706;--red:#DC2626;--emerald:#059669;
+  --nav-bg:rgba(248,247,244,.88);
+}
+
+/* Theme toggle button */
+#theme-btn{width:36px;height:36px;border-radius:9px;border:1.5px solid var(--border2);background:var(--surface);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .25s;font-size:1rem;flex-shrink:0}
+#theme-btn:hover{border-color:var(--violet);background:var(--violet-dim)}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:16px;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--violet-dim);color:var(--violet)}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg2)}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:4px}
+#page-docs{display:none}
+
+/* ══ GRAIN OVERLAY ══ */
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:1000;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ══ NAV ══ */
+nav{position:fixed;top:0;left:0;right:0;z-index:500;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;background:var(--nav-bg,rgba(248,247,244,.88));border-bottom:1px solid var(--border);backdrop-filter:blur(20px);transition:background .3s,border-color .3s,box-shadow .4s}
+nav.shadow{box-shadow:0 1px 20px rgba(0,0,0,.06)}
+.nav-logo{font-family:var(--fh);font-size:1rem;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:.5rem;cursor:pointer;letter-spacing:-.02em}
+.logo-pill{background:var(--violet);color:#fff;font-size:.6rem;font-family:var(--fm);padding:.18rem .5rem;border-radius:20px;letter-spacing:.06em;margin-left:.2rem}
+.nav-links{display:flex;gap:2rem;font-size:.84rem;font-weight:500;color:var(--ink2)}
+.nav-links a{transition:color .2s;cursor:pointer;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1.5px;background:var(--violet);transform:scaleX(0);transition:transform .3s var(--ease-out-expo)}
+.nav-links a:hover{color:var(--violet)}.nav-links a:hover::after{transform:scaleX(1)}
+.nav-right{display:flex;align-items:center;gap:.7rem}
+.nav-docs{font-size:.82rem;font-weight:600;color:var(--ink2);border:1.5px solid var(--border2);padding:.38rem 1rem;border-radius:7px;transition:all .25s;cursor:pointer}
+.nav-docs:hover,.nav-docs.on{border-color:var(--violet);color:var(--violet);background:var(--violet-dim)}
+.nav-cta{background:var(--ink);color:#fff;font-size:.82rem;font-weight:600;padding:.42rem 1.2rem;border-radius:7px;transition:all .25s;cursor:pointer}
+.nav-cta:hover{background:var(--violet);transform:translateY(-1px)}
+
+/* ══ HERO ══ */
+#hero{min-height:100vh;display:flex;align-items:center;padding:8rem 2.5rem 5rem;position:relative;overflow:hidden}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(to right,var(--border) 1px,transparent 1px),linear-gradient(to bottom,var(--border) 1px,transparent 1px);background-size:56px 56px;opacity:.4;mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 20%,transparent 80%)}
+.hero-orb{position:absolute;right:5%;top:15%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(91,33,182,.1) 0%,rgba(124,58,237,.05) 40%,transparent 70%);pointer-events:none;animation:orb-float 8s ease-in-out infinite}
+.hero-orb2{position:absolute;left:-5%;bottom:10%;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(91,33,182,.06) 0%,transparent 70%);pointer-events:none;animation:orb-float 10s ease-in-out infinite reverse}
+@keyframes orb-float{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-30px) scale(1.04)}}
+.hero-in{max-width:1080px;margin:0 auto;width:100%;position:relative}
+.hero-badge{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--fm);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--violet);background:var(--violet-dim);border:1px solid var(--violet-mid);padding:.38rem 1rem;border-radius:30px;margin-bottom:2rem;animation:badge-in .8s var(--ease-out-expo) .2s both}
+@keyframes badge-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--violet-m);animation:pulse-d 2s infinite}
+@keyframes pulse-d{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.6)}}
+h1.h1{font-family:var(--fh);font-size:clamp(3.5rem,7.5vw,7rem);font-weight:900;line-height:.92;letter-spacing:-.03em;color:var(--ink);margin-bottom:1.4rem;animation:h1-in 1s var(--ease-out-expo) .35s both}
+@keyframes h1-in{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+h1.h1 .acc{color:var(--violet)}h1.h1 .gr{color:var(--ink3)}
+.hero-sub{font-size:1.07rem;color:var(--ink2);max-width:520px;line-height:1.8;margin-bottom:2.8rem;animation:sub-in 1s var(--ease-out-expo) .5s both}
+@keyframes sub-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.hero-btns{display:flex;gap:.8rem;flex-wrap:wrap;animation:sub-in 1s var(--ease-out-expo) .65s both}
+.btn-fill{background:var(--ink);color:#fff;font-family:var(--fb);font-size:.87rem;font-weight:600;padding:.8rem 2.2rem;border-radius:8px;transition:all .3s var(--ease-spring);display:inline-flex;align-items:center;gap:.5rem;cursor:pointer}
+.btn-fill:hover{background:var(--violet);transform:translateY(-2px);box-shadow:0 8px 24px rgba(91,33,182,.3)}
+.btn-ghost{border:1.5px solid var(--border2);color:var(--ink2);font-family:var(--fb);font-size:.87rem;font-weight:600;padding:.8rem 2.2rem;border-radius:8px;transition:all .3s var(--ease-spring);cursor:pointer}
+.btn-ghost:hover{border-color:var(--violet);color:var(--violet);background:var(--violet-dim);transform:translateY(-1px)}
+.hero-stats{display:flex;gap:2.5rem;margin-top:4.5rem;padding-top:3rem;border-top:1px solid var(--border);flex-wrap:wrap;animation:sub-in 1s var(--ease-out-expo) .8s both}
+.stat{display:flex;flex-direction:column;gap:.2rem}
+.stat-n{font-family:var(--fh);font-size:2rem;font-weight:900;color:var(--violet);letter-spacing:-.04em}
+.stat-l{font-size:.75rem;font-weight:500;color:var(--ink3);letter-spacing:.04em;text-transform:uppercase}
+
+/* ══ SHARED ══ */
+.sec{padding:6rem 2.5rem}
+.sec-in{max-width:1080px;margin:0 auto}
+.s-tag{font-family:var(--fm);font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--violet);display:block;margin-bottom:.9rem}
+.s-title{font-family:var(--fh);font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:800;line-height:1.0;color:var(--ink);margin-bottom:1.2rem;letter-spacing:-.025em}
+.s-desc{font-size:.98rem;color:var(--ink2);max-width:540px;line-height:1.8}
+.hr-line{height:1px;background:var(--border);margin:0 2.5rem}
+
+/* ══ ANIMATIONS ══ */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease-out-expo),transform .7s var(--ease-out-expo)}
+.reveal.in{opacity:1;transform:none}
+.reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .7s var(--ease-out-expo),transform .7s var(--ease-out-expo)}
+.reveal-left.in{opacity:1;transform:none}
+.reveal-scale{opacity:0;transform:scale(.96);transition:opacity .6s var(--ease-out-expo),transform .6s var(--ease-out-expo)}
+.reveal-scale.in{opacity:1;transform:none}
+.stagger>*{opacity:0;transform:translateY(24px);transition:opacity .6s var(--ease-out-expo),transform .6s var(--ease-out-expo)}
+.stagger.in>*{opacity:1;transform:none}
+.stagger.in>*:nth-child(1){transition-delay:.05s}.stagger.in>*:nth-child(2){transition-delay:.12s}
+.stagger.in>*:nth-child(3){transition-delay:.19s}.stagger.in>*:nth-child(4){transition-delay:.26s}
+.stagger.in>*:nth-child(5){transition-delay:.33s}.stagger.in>*:nth-child(6){transition-delay:.4s}
+
+/* ══ ABOUT ══ */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:4rem;align-items:start}
+.acard{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:2rem;margin-bottom:1.2rem;transition:box-shadow .3s,transform .3s var(--ease-spring)}
+.acard:hover{box-shadow:0 4px 32px rgba(0,0,0,.06);transform:translateY(-2px)}
+.av-row{display:flex;align-items:center;gap:1.2rem;margin-bottom:2rem}
+.avatar{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--violet),#A855F7);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-weight:800;font-size:1.1rem;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(91,33,182,.3)}
+.av-name{font-family:var(--fh);font-size:1.1rem;font-weight:700;color:var(--ink);letter-spacing:-.02em}
+.av-role{font-family:var(--fm);font-size:.67rem;letter-spacing:.08em;color:var(--violet);margin-top:.15rem}
+.caps{display:grid;grid-template-columns:1fr 1fr;gap:.45rem}
+.cap{font-size:.8rem;font-weight:500;color:var(--ink2);padding:.5rem .75rem;background:var(--bg2);border:1px solid var(--border);border-radius:7px;display:flex;align-items:center;gap:.5rem;transition:all .2s}
+.cap:hover{border-color:var(--violet-mid);color:var(--violet);background:var(--violet-dim)}
+.cap::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--violet);flex-shrink:0;transition:transform .2s}
+.cap:hover::before{transform:scale(1.4)}
+.skill-row{margin-bottom:.9rem}
+.skill-hd{display:flex;justify-content:space-between;margin-bottom:.35rem;font-size:.78rem}
+.skill-l{color:var(--ink2);font-weight:500}.skill-p{color:var(--violet);font-family:var(--fm);font-size:.72rem}
+.skill-track{height:3px;background:var(--border);border-radius:2px;overflow:hidden}
+.skill-fill{height:100%;background:linear-gradient(90deg,var(--violet),#A855F7);width:0;transition:width 1.3s var(--ease-out-expo)}
+.tl{display:flex;flex-direction:column;gap:1.4rem}
+.tl-item{padding-left:1.5rem;border-left:2px solid var(--border);position:relative;transition:border-color .2s}
+.tl-item:hover{border-left-color:var(--violet)}
+.tl-item::before{content:'';position:absolute;left:-5px;top:7px;width:8px;height:8px;border-radius:50%;background:var(--violet);border:2px solid var(--bg);transition:transform .2s var(--ease-spring)}
+.tl-item:hover::before{transform:scale(1.3)}
+.tl-d{font-family:var(--fm);font-size:.66rem;color:var(--violet);letter-spacing:.08em}
+.tl-c{font-family:var(--fh);font-size:1rem;font-weight:700;color:var(--ink);margin:.15rem 0;letter-spacing:-.02em}
+.tl-r{font-size:.83rem;color:var(--ink2);line-height:1.65}
+.edu-block{margin-top:1.5rem;padding:1.4rem;background:var(--violet-dim);border:1px solid var(--violet-mid);border-radius:12px}
+.edu-d{font-family:var(--fh);font-size:.95rem;font-weight:700;color:var(--violet-text);letter-spacing:-.01em}
+.edu-s{font-size:.82rem;color:var(--violet);margin-top:.2rem;font-weight:500}
+
+/* ══ TERMINAL SECTION ══ */
+#terminal-sec{background:var(--mono-bg);position:relative;overflow:hidden}
+.term-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:700px;height:300px;background:radial-gradient(ellipse,rgba(124,58,237,.15),transparent 70%);pointer-events:none}
+.term-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:32px 32px}
+#terminal-sec .sec-in{position:relative}
+#terminal-sec .s-tag{color:var(--mono-v)}
+#terminal-sec .s-title{color:#fff}
+#terminal-sec .s-desc{color:var(--mono-dim)}
+.term-window{background:var(--mono-s);border:1px solid var(--mono-b);border-radius:14px;overflow:hidden;margin-top:3rem;box-shadow:0 32px 80px rgba(0,0,0,.5)}
+.term-bar{display:flex;align-items:center;padding:.8rem 1.2rem;background:#0F0D1A;border-bottom:1px solid var(--mono-b);gap:.5rem}
+.td{width:12px;height:12px;border-radius:50%}
+.td.r{background:#ff5f57}.td.y{background:#ffbd2e}.td.g{background:#28c840}
+.term-title-bar{font-family:var(--fm);font-size:.72rem;color:var(--mono-dim);margin-left:auto;letter-spacing:.06em}
+.term-body{padding:2rem;min-height:420px;position:relative}
+.term-lines{font-family:var(--fm);font-size:.84rem;line-height:2}
+.tl2{display:block;animation:none}
+.tl2.typed{animation:type-in .05s ease forwards}
+.prompt{color:var(--mono-dim)}.cmd{color:var(--mono-b2)}.arg{color:var(--mono-v)}
+.out-ok{color:var(--mono-g)}.out-err{color:var(--mono-r)}.out-warn{color:var(--mono-y)}
+.out-info{color:var(--mono-dim)}.out-t{color:var(--mono-t)}
+.blink-cur{display:inline-block;width:9px;height:1.1em;background:var(--mono-v);vertical-align:middle;animation:blink-c .8s steps(1) infinite;margin-left:2px}
+@keyframes blink-c{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes type-in{from{opacity:0}to{opacity:1}}
+.term-tabs{display:flex;gap:.4rem;padding:1rem 1.2rem .3rem;border-bottom:1px solid var(--mono-b)}
+.ttab{font-family:var(--fm);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mono-dim);padding:.35rem .8rem;border-radius:5px;cursor:pointer;transition:all .2s;border:1px solid transparent}
+.ttab:hover{color:var(--mono-t);background:var(--mono-b)}
+.ttab.on{color:var(--mono-v);border-color:rgba(192,132,252,.3);background:rgba(192,132,252,.08)}
+.term-panel{display:none}.term-panel.on{display:block}
+
+/* ══ SEQUENCE DIAGRAM ══ */
+#seq-section{background:var(--mono-bg);position:relative;overflow:hidden}
+#seq-section .s-tag{color:var(--mono-v)}
+#seq-section .s-title{color:#fff}
+#seq-section .s-desc{color:var(--mono-dim)}
+.seq-wrap{position:relative;margin-top:3rem;overflow-x:auto;padding-bottom:2rem}
+.seq-canvas{min-width:820px;width:100%;position:relative}
+/* lifelines */
+.seq-actors{display:flex;justify-content:space-between;padding:0 0 0 0;margin-bottom:0}
+.seq-actor{display:flex;flex-direction:column;align-items:center;flex:1;position:relative}
+.actor-box{background:var(--mono-s);border:1.5px solid var(--mono-b);border-radius:9px;padding:.55rem 1rem;font-family:var(--fm);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;position:relative;z-index:2;transition:all .3s}
+.actor-box.active{border-color:var(--mono-v);color:var(--mono-v);box-shadow:0 0 16px rgba(192,132,252,.25)}
+.actor-box.gouta-box{border-color:var(--mono-g);color:var(--mono-g);box-shadow:0 0 16px rgba(74,222,128,.2)}
+.actor-box .actor-emoji{display:block;font-size:1.2rem;margin-bottom:.25rem;text-align:center}
+.lifeline{width:2px;height:var(--ll-height,520px);background:repeating-linear-gradient(to bottom,var(--mono-b) 0px,var(--mono-b) 8px,transparent 8px,transparent 16px);margin:0 auto;position:relative}
+.lifeline.active-line{background:repeating-linear-gradient(to bottom,rgba(192,132,252,.5) 0px,rgba(192,132,252,.5) 8px,transparent 8px,transparent 16px)}
+.lifeline.gouta-line{background:repeating-linear-gradient(to bottom,rgba(74,222,128,.4) 0px,rgba(74,222,128,.4) 8px,transparent 8px,transparent 16px)}
+/* activation boxes */
+.activation{position:absolute;width:10px;left:50%;transform:translateX(-50%);background:rgba(192,132,252,.25);border:1px solid rgba(192,132,252,.5);border-radius:2px;z-index:3}
+.activation.g{background:rgba(74,222,128,.2);border-color:rgba(74,222,128,.4)}
+/* messages / arrows */
+.seq-messages{position:absolute;top:0;left:0;width:100%;pointer-events:none}
+.seq-msg{position:absolute;width:100%;opacity:0;transform:translateX(-8px);transition:opacity .4s ease,transform .4s ease}
+.seq-msg.visible{opacity:1;transform:none}
+.msg-line{position:absolute;height:2px;top:50%;transform:translateY(-50%)}
+.msg-line.solid{background:var(--mono-dim)}
+.msg-line.violet{background:var(--mono-v)}
+.msg-line.green{background:var(--mono-g)}
+.msg-line.red{background:var(--mono-r)}
+.msg-line.yellow{background:var(--mono-y)}
+.msg-line.dashed{background:repeating-linear-gradient(to right,var(--mono-dim) 0,var(--mono-dim) 5px,transparent 5px,transparent 10px);height:1px}
+.msg-arrowhead{position:absolute;top:50%;transform:translateY(-50%);width:0;height:0}
+.msg-arrowhead.right{border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:8px solid var(--mono-dim)}
+.msg-arrowhead.right.violet{border-left-color:var(--mono-v)}
+.msg-arrowhead.right.green{border-left-color:var(--mono-g)}
+.msg-arrowhead.right.red{border-left-color:var(--mono-r)}
+.msg-arrowhead.right.yellow{border-left-color:var(--mono-y)}
+.msg-arrowhead.left{border-top:5px solid transparent;border-bottom:5px solid transparent;border-right:8px solid var(--mono-dim)}
+.msg-arrowhead.left.violet{border-right-color:var(--mono-v)}
+.msg-arrowhead.left.green{border-right-color:var(--mono-g)}
+.msg-arrowhead.left.red{border-right-color:var(--mono-r)}
+.msg-arrowhead.left.yellow{border-right-color:var(--mono-y)}
+.msg-label{position:absolute;top:50%;transform:translateY(-130%);font-family:var(--fm);font-size:.68rem;letter-spacing:.04em;white-space:nowrap;background:var(--mono-bg);padding:.1rem .35rem;border-radius:3px;z-index:5}
+.msg-label.violet{color:var(--mono-v)}
+.msg-label.green{color:var(--mono-g)}
+.msg-label.red{color:var(--mono-r)}
+.msg-label.yellow{color:var(--mono-y)}
+.msg-label.default{color:var(--mono-dim)}
+/* loop / alt frames */
+.seq-frame{position:absolute;border:1px dashed;border-radius:6px;pointer-events:none;opacity:0;transition:opacity .5s}
+.seq-frame.visible{opacity:1}
+.seq-frame.loop-box{border-color:rgba(253,224,71,.35)}
+.seq-frame.alt-box{border-color:rgba(248,113,113,.35)}
+.frame-label{position:absolute;top:-1px;left:8px;font-family:var(--fm);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;padding:.12rem .4rem;border-radius:0 0 4px 0}
+.frame-label.loop-label{background:rgba(253,224,71,.12);color:var(--mono-y)}
+.frame-label.alt-label{background:rgba(248,113,113,.12);color:var(--mono-r)}
+/* note boxes */
+.seq-note{position:absolute;background:rgba(253,224,71,.07);border:1px solid rgba(253,224,71,.2);border-radius:6px;padding:.4rem .7rem;font-family:var(--fm);font-size:.63rem;color:var(--mono-y);line-height:1.6;opacity:0;transition:opacity .4s;z-index:10;max-width:160px}
+.seq-note.visible{opacity:1}
+.seq-note::before{content:'// note';display:block;font-size:.56rem;opacity:.6;margin-bottom:.2rem}
+/* bottom actor boxes */
+.seq-actors-bottom{margin-top:.5rem}
+/* legend */
+.seq-legend{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;padding:1rem 1.5rem;background:var(--mono-s);border:1px solid var(--mono-b);border-radius:10px;font-family:var(--fm);font-size:.67rem}
+.leg-item{display:flex;align-items:center;gap:.5rem;color:var(--mono-dim)}
+.leg-dot{width:10px;height:2px;flex-shrink:0}
+/* progress counter */
+.seq-step-counter{font-family:var(--fm);font-size:.72rem;color:var(--mono-dim);margin-bottom:.5rem;letter-spacing:.06em}
+.seq-step-counter span{color:var(--mono-v)}
+
+/* ══ SERVICES ══ */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:1.2rem;margin-top:3rem}
+.svc-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.8rem;transition:all .35s var(--ease-spring);position:relative;overflow:hidden}
+.svc-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(91,33,182,.04),transparent 60%);opacity:0;transition:opacity .3s}
+.svc-card:hover{border-color:var(--violet-mid);box-shadow:0 8px 32px rgba(91,33,182,.1);transform:translateY(-4px)}
+.svc-card:hover::before{opacity:1}
+.svc-ep{font-family:var(--fm);font-size:.66rem;letter-spacing:.06em;color:var(--violet);background:var(--violet-dim);border:1px solid var(--violet-mid);padding:.25rem .65rem;border-radius:4px;display:inline-block;margin-bottom:1rem}
+.svc-name{font-family:var(--fh);font-size:1.12rem;font-weight:700;color:var(--ink);margin-bottom:.5rem;letter-spacing:-.02em}
+.svc-desc{font-size:.84rem;color:var(--ink2);line-height:1.7;margin-bottom:1.3rem}
+.svc-row{display:flex;gap:.7rem;margin-bottom:.5rem;font-size:.8rem}
+.svc-k{font-family:var(--fm);font-size:.63rem;color:var(--ink3);min-width:50px;flex-shrink:0;padding-top:.15rem}
+.svc-v{color:var(--ink2)}.svc-v.hi{color:var(--violet);font-weight:500}
+.svc-div{height:1px;background:var(--border);margin:1.1rem 0}
+.svc-stack{display:flex;flex-wrap:wrap;gap:.4rem}
+.stag{font-family:var(--fm);font-size:.65rem;background:var(--bg2);border:1px solid var(--border);padding:.22rem .55rem;border-radius:4px;color:var(--ink2);transition:all .2s}
+.stag:hover{border-color:var(--violet-mid);color:var(--violet)}
+
+/* ══ PRICING ══ */
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2rem;margin-top:3rem}
+.p-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:2.2rem;position:relative;transition:all .35s var(--ease-spring)}
+.p-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(0,0,0,.07)}
+.p-card.feat{border-color:var(--violet);box-shadow:0 0 0 4px var(--violet-dim)}
+.p-card.feat:hover{box-shadow:0 0 0 4px var(--violet-dim),0 12px 40px rgba(91,33,182,.18)}
+.feat-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--violet);color:#fff;white-space:nowrap;font-family:var(--fm);font-size:.63rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .9rem;border-radius:4px}
+.p-type{font-family:var(--fm);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:.8rem}
+.p-amount{font-family:var(--fh);font-size:2.4rem;font-weight:800;color:var(--ink);margin-bottom:.2rem;letter-spacing:-.04em}
+.p-amount span{font-size:.95rem;color:var(--ink2);font-weight:400}
+.p-per{font-size:.8rem;color:var(--ink2);margin-bottom:1.8rem}
+.p-feats{display:flex;flex-direction:column;gap:.7rem;margin-bottom:2rem}
+.pf{display:flex;align-items:center;gap:.6rem;font-size:.86rem;color:var(--ink2)}
+.pf::before{content:'✓';color:var(--emerald);font-size:.75rem;flex-shrink:0;font-weight:700}
+.p-btn{display:block;width:100%;text-align:center;font-family:var(--fb);font-size:.8rem;font-weight:600;padding:.82rem;border-radius:9px;transition:all .25s var(--ease-spring);cursor:pointer}
+.p-btn.fill{background:var(--ink);color:#fff}.p-btn.fill:hover{background:var(--violet);transform:translateY(-1px);box-shadow:0 4px 16px rgba(91,33,182,.3)}
+.p-btn.ghost{border:1.5px solid var(--border2);color:var(--ink2)}.p-btn.ghost:hover{border-color:var(--violet);color:var(--violet);background:var(--violet-dim);transform:translateY(-1px)}
+
+/* ══ CURRENCY TOGGLE ══ */
+.currency-toggle{display:inline-flex;align-items:center;gap:0;background:var(--bg2);border:1.5px solid var(--border2);border-radius:10px;overflow:hidden;padding:3px;margin-top:1.4rem}
+.ctog{font-family:var(--fm);font-size:.73rem;font-weight:600;letter-spacing:.05em;padding:.42rem 1.1rem;border-radius:7px;cursor:pointer;transition:all .25s var(--ease-spring);color:var(--ink3);user-select:none;display:flex;align-items:center;gap:.4rem}
+.ctog .cflag{font-size:.95rem}
+.ctog.on{background:var(--surface);color:var(--ink);box-shadow:0 1px 6px rgba(0,0,0,.1)}
+.ctog.on.tn{background:linear-gradient(135deg,#E8284A 0%,#C4102F 100%);color:#fff;box-shadow:0 2px 10px rgba(196,16,47,.35)}
+.ctog.on.int{background:var(--violet);color:#fff;box-shadow:0 2px 10px rgba(91,33,182,.35)}
+.price-val{transition:all .35s var(--ease-spring);display:inline-block}
+.price-unit{transition:all .35s var(--ease-spring)}
+.price-per{transition:all .35s var(--ease-spring)}
+@keyframes price-flip{0%{opacity:0;transform:translateY(-6px)}100%{opacity:1;transform:none}}
+.price-animate{animation:price-flip .3s var(--ease-out-expo) forwards}
+.tn-note{font-family:var(--fm);font-size:.65rem;color:var(--ink3);margin-top:.6rem;padding:.35rem .7rem;background:var(--bg2);border:1px solid var(--border);border-radius:6px;display:none;letter-spacing:.03em}
+.tn-note.show{display:block}
+
+/* ══ PROJECTS ══ */
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:1.2rem;margin-top:3rem}
+.proj-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.8rem;transition:all .35s var(--ease-spring)}
+.proj-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.07);transform:translateY(-3px);border-color:var(--border2)}
+.proj-co{font-family:var(--fm);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:.4rem}
+.proj-name{font-family:var(--fh);font-size:1.05rem;font-weight:700;color:var(--ink);margin-bottom:.9rem;letter-spacing:-.02em}
+.plbl{font-family:var(--fm);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.25rem}
+.plbl.pb{color:var(--red)}.plbl.ps{color:var(--emerald);margin-top:.7rem}
+.ptxt{font-size:.84rem;color:var(--ink2);line-height:1.65}
+.mets{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.3rem;padding-top:1.1rem;border-top:1px solid var(--border)}
+.met{font-family:var(--fm);font-size:.67rem;color:var(--violet);background:var(--violet-dim);border:1px solid var(--violet-mid);padding:.25rem .6rem;border-radius:4px;transition:all .2s}
+.met:hover{background:var(--violet);color:#fff;border-color:var(--violet)}
+
+/* ══ CONTACT SECTION ══ */
+#contact{background:var(--bg2)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;margin-top:4rem;align-items:start}
+.contact-left .contact-h{font-family:var(--fh);font-size:clamp(2rem,4vw,3.2rem);font-weight:800;line-height:1.05;color:var(--ink);margin-bottom:1.2rem;letter-spacing:-.03em}
+.contact-h .acc{color:var(--violet)}
+.contact-links{display:flex;flex-direction:column;gap:.7rem;margin-top:2.5rem}
+.clink{display:flex;align-items:center;gap:.8rem;background:var(--surface);border:1.5px solid var(--border);padding:.9rem 1.3rem;border-radius:10px;font-size:.88rem;font-weight:500;color:var(--ink2);transition:all .3s var(--ease-spring)}
+.clink:hover{border-color:var(--violet);color:var(--violet);background:var(--violet-dim);transform:translateX(4px);box-shadow:0 4px 16px rgba(91,33,182,.12)}
+.clink-icon{width:32px;height:32px;border-radius:7px;background:var(--bg2);display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0;transition:all .2s}
+.clink:hover .clink-icon{background:var(--violet);color:#fff}
+
+/* ── CONTACT FORM ── */
+.contact-form{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:2.5rem}
+.form-title{font-family:var(--fh);font-size:1.3rem;font-weight:700;color:var(--ink);margin-bottom:.4rem;letter-spacing:-.02em}
+.form-sub{font-size:.85rem;color:var(--ink2);margin-bottom:2rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.form-group{display:flex;flex-direction:column;gap:.45rem;margin-bottom:1rem}
+.form-group label{font-size:.8rem;font-weight:600;color:var(--ink);letter-spacing:.01em}
+.form-group input,.form-group textarea,.form-group select{font-family:var(--fb);font-size:.88rem;color:var(--ink);background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:.75rem 1rem;outline:none;transition:all .25s;width:100%;resize:none}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--violet);background:var(--surface);box-shadow:0 0 0 3px rgba(91,33,182,.1)}
+.form-group textarea{min-height:110px}
+.form-group select{cursor:pointer}
+.form-submit{width:100%;background:var(--ink);color:#fff;font-family:var(--fb);font-size:.9rem;font-weight:600;padding:.85rem;border-radius:9px;border:none;cursor:pointer;transition:all .3s var(--ease-spring);display:flex;align-items:center;justify-content:center;gap:.6rem}
+.form-submit:hover{background:var(--violet);transform:translateY(-2px);box-shadow:0 8px 24px rgba(91,33,182,.3)}
+.form-submit:active{transform:translateY(0)}
+.form-success{display:none;text-align:center;padding:2rem;color:var(--emerald)}
+.form-success svg{margin-bottom:1rem}
+.form-success-title{font-family:var(--fh);font-size:1.2rem;font-weight:700;margin-bottom:.5rem}
+
+/* ══ FOOTER ══ */
+footer{padding:1.8rem 2.5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.fl{font-family:var(--fh);font-size:.9rem;font-weight:800;color:var(--violet);letter-spacing:-.02em}
+.fr{font-family:var(--fm);font-size:.68rem;color:var(--ink3)}
+.fst{display:flex;align-items:center;gap:.45rem;font-family:var(--fm);font-size:.68rem;color:var(--ink2)}
+.sdot{width:6px;height:6px;border-radius:50%;background:var(--emerald);animation:pulse-d 2s infinite}
+
+/* ══════════════════════ DOCS ══════════════════════ */
+#page-docs{padding-top:64px;min-height:100vh;flex-direction:column}
+.docs-layout{display:flex;flex:1;max-width:1280px;margin:0 auto;width:100%}
+.docs-sidebar{width:260px;flex-shrink:0;padding:2rem 0 4rem;border-right:1px solid var(--border);position:sticky;top:64px;height:calc(100vh - 64px);overflow-y:auto}
+.docs-sidebar::-webkit-scrollbar{width:3px}
+.sg{margin-bottom:1.8rem;padding:0 1.4rem}
+.sg-t{font-family:var(--fm);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:.6rem}
+.sg-items{display:flex;flex-direction:column;gap:.05rem}
+.si{font-size:.85rem;font-weight:500;color:var(--ink2);padding:.42rem .7rem;border-radius:7px;cursor:pointer;transition:all .18s}
+.si:hover{background:var(--bg2);color:var(--ink)}
+.si.on{background:var(--violet-dim);color:var(--violet);font-weight:600}
+.si.sub{padding-left:1.5rem;font-size:.82rem}
+.docs-content{flex:1;min-width:0;padding:2.5rem 3rem;max-width:780px}
+.doc-panel{display:none}.doc-panel.on{display:block}
+.doc-bc{font-family:var(--fm);font-size:.7rem;color:var(--ink3);margin-bottom:1.8rem;display:flex;align-items:center;gap:.4rem}
+.doc-bc span{color:var(--ink2)}
+.doc-h1{font-family:var(--fh);font-size:2.3rem;font-weight:800;color:var(--ink);margin-bottom:.8rem;line-height:1.1;letter-spacing:-.03em}
+.doc-lead{font-size:1rem;color:var(--ink2);line-height:1.8;margin-bottom:2rem;max-width:640px}
+.doc-h2{font-family:var(--fh);font-size:1.3rem;font-weight:700;color:var(--ink);margin:2.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--border);letter-spacing:-.02em}
+.doc-h3{font-family:var(--fh);font-size:1.05rem;font-weight:700;color:var(--ink);margin:1.8rem 0 .6rem}
+.doc-p{font-size:.93rem;color:var(--ink2);line-height:1.8;margin-bottom:1rem}
+code.ic{font-family:var(--fm);font-size:.78rem;background:var(--violet-dim);color:var(--violet-text);padding:.15rem .45rem;border-radius:4px}
+.cb{background:var(--mono-bg);border-radius:10px;overflow:hidden;margin:1.2rem 0;border:1px solid var(--mono-b)}
+.cb-head{display:flex;align-items:center;justify-content:space-between;padding:.6rem 1.1rem;background:var(--mono-s);border-bottom:1px solid var(--mono-b)}
+.cb-lang{font-family:var(--fm);font-size:.64rem;letter-spacing:.08em;color:var(--mono-dim);text-transform:uppercase}
+.cb-dots2{display:flex;gap:.4rem}
+.cbd{width:10px;height:10px;border-radius:50%}
+.cbd.r{background:#ff5f57}.cbd.y{background:#ffbd2e}.cbd.g{background:#28c840}
+.cb-body{padding:1.3rem 1.4rem;font-family:var(--fm);font-size:.82rem;line-height:1.9;overflow-x:auto;color:var(--mono-t)}
+.dv{color:var(--mono-v)}.dg{color:var(--mono-g)}.dr{color:var(--mono-r)}
+.dy{color:var(--mono-y)}.db2{color:var(--mono-b2)}.dm{color:var(--mono-dim)}.dt{color:var(--mono-t)}
+.step-wrap{display:flex;flex-direction:column;gap:0;margin:2rem 0}
+.step{display:flex;gap:1.4rem;position:relative;padding-bottom:2rem}
+.step:last-child{padding-bottom:0}
+.step:last-child .step-line{display:none}
+.step-l{display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:40px}
+.step-num{width:40px;height:40px;border-radius:50%;background:var(--violet);color:#fff;font-family:var(--fh);font-size:.95rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.step-line{width:2px;background:var(--border);flex:1;margin-top:.4rem}
+.step-b{padding-top:.5rem;flex:1}
+.step-title{font-family:var(--fh);font-size:1.1rem;font-weight:700;color:var(--ink);margin-bottom:.5rem}
+.step-desc{font-size:.9rem;color:var(--ink2);line-height:1.75}
+.warn-box{margin:1rem 0;padding:1rem 1.2rem;background:#FFF7ED;border:1px solid #FED7AA;border-radius:8px;font-size:.86rem;color:#92400E;line-height:1.7}
+.info-box{margin:1rem 0;padding:1rem 1.2rem;background:var(--violet-dim);border:1px solid var(--violet-mid);border-radius:8px;font-size:.86rem;color:var(--violet-text);line-height:1.7}
+.ok-box{margin:1rem 0;padding:1rem 1.2rem;background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;font-size:.86rem;color:#14532D;line-height:1.7}
+.err-box{margin:1rem 0;padding:1rem 1.2rem;background:#FEF2F2;border:1px solid #FECACA;border-radius:8px;font-size:.86rem;color:#7F1D1D;line-height:1.7}
+.t-tbl{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.85rem}
+.t-tbl th{padding:.6rem .9rem;text-align:left;background:var(--bg2);font-family:var(--fm);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);border-bottom:1px solid var(--border)}
+.t-tbl td{padding:.65rem .9rem;border-bottom:1px solid var(--border);color:var(--ink2);vertical-align:top}
+.t-tbl td:first-child{font-family:var(--fm);font-size:.77rem;color:var(--violet)}
+.t-tbl tr:last-child td{border-bottom:none}
+.c-tbl{width:100%;border-collapse:collapse;margin:1.2rem 0;font-size:.84rem}
+.c-tbl th{padding:.65rem 1rem;text-align:left;font-family:var(--fm);font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);border-bottom:2px solid var(--border)}
+.c-tbl td{padding:.65rem 1rem;border-bottom:1px solid var(--border);color:var(--ink2)}
+.c-tbl tr:last-child td{border-bottom:none}
+.c-tbl .gd{color:var(--emerald);font-weight:500}.c-tbl .bd{color:var(--red)}
+.fun-box{margin:1.5rem 0;padding:1.2rem 1.5rem;background:var(--mono-bg);border-radius:10px;font-family:var(--fm);font-size:.8rem;color:var(--mono-t);line-height:1.9;border:1px solid var(--mono-b)}
+.fun-box .fh2{color:var(--mono-v)}.fun-box .fo{color:var(--mono-g)}.fun-box .fb2{color:var(--mono-r)}
+.fun-box .fw{color:var(--mono-y)}.fun-box .fi{color:var(--mono-b2)}.fun-box .fd{color:var(--mono-dim)}
+.doc-nav-row{display:flex;justify-content:space-between;margin-top:3.5rem;padding-top:2rem;border-top:1px solid var(--border);flex-wrap:wrap;gap:1rem}
+.doc-nav-btn{font-size:.85rem;font-weight:600;color:var(--ink2);border:1.5px solid var(--border);padding:.65rem 1.4rem;border-radius:8px;transition:all .25s var(--ease-spring);cursor:pointer}
+.doc-nav-btn:hover{border-color:var(--violet);color:var(--violet);background:var(--violet-dim)}
+.docs-toc{width:200px;flex-shrink:0;padding:2.5rem 1.2rem 4rem;position:sticky;top:64px;height:calc(100vh - 64px);overflow-y:auto}
+.toc-title{font-family:var(--fm);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin-bottom:.8rem}
+.toc-items{display:flex;flex-direction:column;gap:.2rem}
+.toc-i{font-size:.8rem;color:var(--ink2);cursor:pointer;padding:.28rem .5rem;border-radius:4px;border-left:2px solid transparent;transition:all .15s}
+.toc-i:hover,.toc-i.at{color:var(--violet);border-left-color:var(--violet);background:var(--violet-dim)}
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:900px){.about-grid,.contact-grid{grid-template-columns:1fr}.docs-toc{display:none}.nav-links{display:none}.sec{padding-left:1.4rem;padding-right:1.4rem}#hero{padding-left:1.4rem;padding-right:1.4rem}.docs-content{padding:1.5rem}}
+@media(max-width:640px){.docs-sidebar{display:none}.form-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav id="main-nav">
+  <div class="nav-logo" onclick="showPage('main')">
+    gouta.dev <span class="logo-pill">v1.0</span>
+  </div>
+  <div class="nav-links">
+    <a onclick="goTo('about')">Profile</a>
+    <a onclick="goTo('services')">Services</a>
+    <a onclick="goTo('pricing')">Pricing</a>
+    <a onclick="goTo('terminal-sec')">CLI</a>
+    <a onclick="goTo('projects')">Work</a>
+    <a onclick="goTo('contact')">Contact</a>
+  </div>
+  <div class="nav-right">
+    <div id="theme-btn" onclick="toggleTheme()" title="Toggle theme">🌙</div>
+    <div class="nav-docs" id="docs-btn" onclick="showPage('docs')">Docs</div>
+    <div class="nav-cta" onclick="goTo('contact')">Hire Me →</div>
+  </div>
+</nav>
+
+<!-- ════════ MAIN PAGE ════════ -->
+<div id="page-main">
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-orb"></div>
+  <div class="hero-orb2"></div>
+  <div class="hero-in">
+    <div class="hero-badge"><div class="badge-dot"></div>Human Agent v1.0 · Available for Deployment</div>
+    <h1 class="h1"><span id="typed-text"></span></h1>
+    <p class="hero-sub">I'm not looking for a job — I'm an on-demand engineering system you can plug into your product, team, or stack. Five years of backend architecture, SaaS, and shipped outcomes. Ready to deploy.</p>
+    <div class="hero-btns">
+      <div class="btn-fill" onclick="goTo('pricing')">View Pricing →</div>
+      <div class="btn-ghost" onclick="showPage('docs')">Read the Docs</div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-n">5+</div><div class="stat-l">Years Exp.</div></div>
+      <div class="stat"><div class="stat-n">100+</div><div class="stat-l">Businesses</div></div>
+      <div class="stat"><div class="stat-n">$50K+</div><div class="stat-l">Revenue Gen.</div></div>
+      <div class="stat"><div class="stat-n">150K+</div><div class="stat-l">Txn / Month</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="sec-in">
+    <span class="s-tag reveal">// Agent Profile</span>
+    <h2 class="s-title reveal">A system, not just a developer.</h2>
+    <p class="s-desc reveal">Senior backend engineer and tech lead who owns outcomes, not just tickets.</p>
+    <div class="about-grid">
+      <div>
+        <div class="acard reveal-scale">
+          <div class="av-row">
+            <div class="avatar">BG</div>
+            <div><div class="av-name">Monam Ben Gouta</div><div class="av-role">Senior Backend Engineer · Tech Lead</div></div>
+          </div>
+          <div style="font-family:var(--fm);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:.7rem">Core Capabilities</div>
+          <div class="caps stagger">
+            <div class="cap">Backend Architecture</div><div class="cap">Fullstack Dev</div>
+            <div class="cap">Tech Lead</div><div class="cap">SaaS Platforms</div>
+            <div class="cap">AI Integrations</div><div class="cap">Fintech Systems</div>
+            <div class="cap">CI/CD & DevOps</div><div class="cap">B2B Scaling</div>
+          </div>
+        </div>
+        <div class="acard reveal-scale" style="transition-delay:.1s">
+          <div style="font-family:var(--fm);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:.9rem">Stack Depth</div>
+          <div class="skill-row"><div class="skill-hd"><span class="skill-l">Node.js / TypeScript</span><span class="skill-p">95%</span></div><div class="skill-track"><div class="skill-fill" data-w="95"></div></div></div>
+          <div class="skill-row"><div class="skill-hd"><span class="skill-l">PostgreSQL / Redis</span><span class="skill-p">90%</span></div><div class="skill-track"><div class="skill-fill" data-w="90"></div></div></div>
+          <div class="skill-row"><div class="skill-hd"><span class="skill-l">React / Next.js</span><span class="skill-p">85%</span></div><div class="skill-track"><div class="skill-fill" data-w="85"></div></div></div>
+          <div class="skill-row"><div class="skill-hd"><span class="skill-l">Docker / CI/CD</span><span class="skill-p">88%</span></div><div class="skill-track"><div class="skill-fill" data-w="88"></div></div></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:var(--fm);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin-bottom:1.2rem" class="reveal">Experience Log</div>
+        <div class="tl reveal">
+          <div class="tl-item"><div class="tl-d">May 2025 — Present</div><div class="tl-c">We-Settle</div><div class="tl-r">Senior Engineer & Tech Lead · Fintech payment platform, 150K+ txn/month, HashiCorp Vault, team of 4.</div></div>
+          <div class="tl-item"><div class="tl-d">Sep 2024 — May 2025</div><div class="tl-c">Bysur</div><div class="tl-r">Backend Team Lead · B2B CRM for insurance brokers, ReactFlow visual workflow automation.</div></div>
+          <div class="tl-item"><div class="tl-d">Jun 2023 — Sep 2024</div><div class="tl-c">HorizonLux</div><div class="tl-r">Fullstack Dev · Review SaaS, AI micro-services (OpenAI), digital signage — 100+ businesses, $50K+ US revenue.</div></div>
+          <div class="tl-item"><div class="tl-d">Jun 2021 — Jun 2023</div><div class="tl-c">Groupado</div><div class="tl-r">Junior Dev & QA · Anti-cheat exam platform, automated testing for high-traffic LMS.</div></div>
+        </div>
+        <div class="edu-block reveal" style="transition-delay:.15s">
+          <div class="edu-d">Master's in Computer Engineering</div><div class="edu-s">ESPRIT · GPA 16.71/20</div>
+          <div class="edu-d" style="margin-top:.8rem;font-size:.88rem">Bachelor's in Computer Science</div><div class="edu-s">ISTIC Tunis</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- SERVICES -->
+<section class="sec" id="services" style="background:var(--bg2)">
+  <div class="sec-in">
+    <span class="s-tag reveal">// Services API</span>
+    <h2 class="s-title reveal">Plug-and-play engineering modules.</h2>
+    <p class="s-desc reveal">Scoped, deliverable-first. Inputs defined, outputs guaranteed.</p>
+    <div class="svc-grid stagger">
+      <div class="svc-card"><div class="svc-ep">POST /backend-architecture</div><div class="svc-name">Backend Architecture API</div><div class="svc-desc">Full system design — data models to deployment, production-ready from day one.</div><div class="svc-row"><span class="svc-k">Input:</span><span class="svc-v">Business requirements, load expectations</span></div><div class="svc-row"><span class="svc-k">Output:</span><span class="svc-v hi">Scalable REST/tRPC API, DB schema, CI/CD</span></div><div class="svc-row"><span class="svc-k">Impact:</span><span class="svc-v">150K+ txn/month processed</span></div><div class="svc-div"></div><div class="svc-stack"><span class="stag">Node.js</span><span class="stag">NestJS</span><span class="stag">PostgreSQL</span><span class="stag">Redis</span><span class="stag">Docker</span></div></div>
+      <div class="svc-card"><div class="svc-ep">POST /fullstack-development</div><div class="svc-name">Fullstack Development API</div><div class="svc-desc">End-to-end product development. Frontend, backend, database — ship fast, iterate faster.</div><div class="svc-row"><span class="svc-k">Input:</span><span class="svc-v">Product spec, designs (optional), timeline</span></div><div class="svc-row"><span class="svc-k">Output:</span><span class="svc-v hi">Deployed SaaS, component library, docs</span></div><div class="svc-row"><span class="svc-k">Impact:</span><span class="svc-v">Multiple production SaaS products shipped</span></div><div class="svc-div"></div><div class="svc-stack"><span class="stag">Next.js</span><span class="stag">React</span><span class="stag">TypeScript</span><span class="stag">tRPC</span></div></div>
+      <div class="svc-card"><div class="svc-ep">POST /ai-integration</div><div class="svc-name">AI Integration API</div><div class="svc-desc">Plug AI into your product. Chat, vision, speech, automation — productized and shipped.</div><div class="svc-row"><span class="svc-k">Input:</span><span class="svc-v">Use case, existing codebase, API keys</span></div><div class="svc-row"><span class="svc-k">Output:</span><span class="svc-v hi">Working AI feature, tested, deployed</span></div><div class="svc-row"><span class="svc-k">Impact:</span><span class="svc-v">5 AI micro-services shipped on GptGold</span></div><div class="svc-div"></div><div class="svc-stack"><span class="stag">OpenAI</span><span class="stag">Next.js</span><span class="stag">Supabase</span><span class="stag">AWS</span></div></div>
+      <div class="svc-card"><div class="svc-ep">POST /tech-lead</div><div class="svc-name">Tech Lead API</div><div class="svc-desc">Lead your engineering team. Sprint planning, architecture, code reviews, delivery ownership.</div><div class="svc-row"><span class="svc-k">Input:</span><span class="svc-v">Team size (2–6), project, tech stack</span></div><div class="svc-row"><span class="svc-k">Output:</span><span class="svc-v hi">Structured sprints, quality code, on-time</span></div><div class="svc-row"><span class="svc-k">Impact:</span><span class="svc-v">Led teams of 4+ engineers, 3 companies</span></div><div class="svc-div"></div><div class="svc-stack"><span class="stag">Agile/Scrum</span><span class="stag">Jest/Vitest</span><span class="stag">GitHub Actions</span></div></div>
+      <div class="svc-card"><div class="svc-ep">POST /saas-platform</div><div class="svc-name">SaaS Platform API</div><div class="svc-desc">Multi-tenant SaaS. Auth, billing hooks, role management, audit trails — the full platform kit.</div><div class="svc-row"><span class="svc-k">Input:</span><span class="svc-v">Market, feature set, integrations</span></div><div class="svc-row"><span class="svc-k">Output:</span><span class="svc-v hi">Production SaaS, 100+ client capacity</span></div><div class="svc-row"><span class="svc-k">Impact:</span><span class="svc-v">100+ businesses, $50K+ US revenue</span></div><div class="svc-div"></div><div class="svc-stack"><span class="stag">PayloadCMS</span><span class="stag">Drizzle</span><span class="stag">Zapier/n8n</span></div></div>
+      <div class="svc-card"><div class="svc-ep">POST /fintech-systems</div><div class="svc-name">Fintech Systems API</div><div class="svc-desc">Payment processing, reconciliation, audit systems. Security-first, compliance-aware.</div><div class="svc-row"><span class="svc-k">Input:</span><span class="svc-v">Volume, compliance reqs, integrations</span></div><div class="svc-row"><span class="svc-k">Output:</span><span class="svc-v hi">Secure platform with full audit trails</span></div><div class="svc-row"><span class="svc-k">Impact:</span><span class="svc-v">150K+ txn/month, bank-grade security</span></div><div class="svc-div"></div><div class="svc-stack"><span class="stag">HashiCorp Vault</span><span class="stag">JWT</span><span class="stag">Redis</span><span class="stag">GCP</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- PRICING -->
+<section class="sec" id="pricing">
+  <div class="sec-in">
+    <span class="s-tag reveal">// Pricing</span>
+    <h2 class="s-title reveal">Transparent, outcome-based pricing.</h2>
+    <p class="s-desc reveal">No recruiters, no middlemen. Pick the model that fits.</p>
+
+    <!-- Currency Toggle -->
+    <div class="reveal" style="margin-top:1.8rem">
+      <div style="font-family:var(--fm);font-size:.67rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:.6rem">// Market</div>
+      <div class="currency-toggle" id="currToggle">
+        <div class="ctog int on" id="tog-int" onclick="setCurrency('int')">
+          <span class="cflag">🌍</span> International · €
+        </div>
+        <div class="ctog tn" id="tog-tn" onclick="setCurrency('tn')">
+          <span class="cflag">🇹🇳</span> Tunisia · TND
+        </div>
+      </div>
+      <div class="tn-note" id="tn-note">
+        💡 TND rates are local-market equivalents · 1 EUR ≈ 3.35 TND
+      </div>
+    </div>
+
+    <div class="pricing-grid stagger" style="margin-top:2rem">
+      <!-- FREELANCE -->
+      <div class="p-card">
+        <div class="p-type">Freelance · Day Rate</div>
+        <div class="p-amount">
+          <span class="price-val" id="price-freelance">350–500</span>
+          <span class="price-unit" id="unit-freelance"> <span style="font-size:.95rem;color:var(--ink2);font-weight:400">€/day</span></span>
+        </div>
+        <div class="p-per price-per" id="per-freelance">4-day minimum · billed weekly</div>
+        <div class="p-feats">
+          <div class="pf">Dedicated focus blocks</div>
+          <div class="pf">Daily async updates</div>
+          <div class="pf">Code review included</div>
+          <div class="pf">Cancel with 1-week notice</div>
+        </div>
+        <div class="p-btn ghost" onclick="goTo('contact')">Start Integration</div>
+      </div>
+
+      <!-- FULL-TIME -->
+      <div class="p-card feat">
+        <div class="feat-badge">Most Requested</div>
+        <div class="p-type">Full-Time · Employment</div>
+        <div class="p-amount">
+          <span class="price-val" id="price-fulltime">45–55K</span>
+          <span class="price-unit" id="unit-fulltime"> <span style="font-size:.95rem;color:var(--ink2);font-weight:400">€/year</span></span>
+        </div>
+        <div class="p-per price-per" id="per-fulltime">Remote or hybrid · immediate availability</div>
+        <div class="p-feats">
+          <div class="pf">Full ownership mindset</div>
+          <div class="pf">Tech lead capability included</div>
+          <div class="pf">Ships from day one</div>
+          <div class="pf">Fintech + SaaS + AI expertise</div>
+          <div class="pf">French, English, Arabic</div>
+        </div>
+        <div class="p-btn fill" onclick="goTo('contact')">Hire Me →</div>
+      </div>
+
+      <!-- PROJECT -->
+      <div class="p-card">
+        <div class="p-type">Project-Based</div>
+        <div class="p-amount">
+          <span class="price-val" id="price-project">Custom</span>
+          <span class="price-unit" id="unit-project"> <span style="font-size:.95rem;color:var(--ink2);font-weight:400">quote</span></span>
+        </div>
+        <div class="p-per price-per" id="per-project">Scoped deliverables · fixed timeline</div>
+        <div class="p-feats">
+          <div class="pf">Clear inputs/outputs upfront</div>
+          <div class="pf">Milestone-based delivery</div>
+          <div class="pf">Full codebase ownership</div>
+          <div class="pf">30-day post-launch support</div>
+        </div>
+        <div class="p-btn ghost" onclick="goTo('contact')">Get a Quote</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- ══ FAKE TERMINAL SECTION ══ -->
+<section class="sec" id="terminal-sec">
+  <div class="term-glow"></div>
+  <div class="term-grid"></div>
+  <div class="sec-in">
+    <span class="s-tag reveal">// gouta-cli</span>
+    <h2 class="s-title reveal">Integrate like a developer.</h2>
+    <p class="s-desc reveal">A CLI tool for the technically curious. Run it in your terminal. Or just watch it run here.</p>
+    <div class="term-window reveal">
+      <div class="term-bar">
+        <div class="td r"></div><div class="td y"></div><div class="td g"></div>
+        <div class="term-title-bar">gouta-cli · v1.0.0 · interactive</div>
+      </div>
+      <div class="term-tabs">
+        <div class="ttab on" onclick="switchTab('hire')">hire</div>
+        <div class="ttab" onclick="switchTab('status')">status</div>
+        <div class="ttab" onclick="switchTab('caps')">capabilities</div>
+        <div class="ttab" onclick="switchTab('errors')">errors</div>
+      </div>
+      <div class="term-body">
+        <!-- HIRE TAB -->
+        <div class="term-panel on" id="tab-hire">
+          <div class="term-lines" id="lines-hire"></div>
+        </div>
+        <!-- STATUS TAB -->
+        <div class="term-panel" id="tab-status">
+          <div class="term-lines" id="lines-status"></div>
+        </div>
+        <!-- CAPS TAB -->
+        <div class="term-panel" id="tab-caps">
+          <div class="term-lines" id="lines-caps"></div>
+        </div>
+        <!-- ERRORS TAB -->
+        <div class="term-panel" id="tab-errors">
+          <div class="term-lines" id="lines-errors"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- ══ HIRING SEQUENCE DIAGRAM ══ -->
+<section class="sec" id="seq-section">
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(74,222,128,.08),transparent 70%);pointer-events:none"></div>
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:32px 32px"></div>
+  <div class="sec-in" style="position:relative">
+    <span class="s-tag reveal">// hiring-protocol.sequence</span>
+    <h2 class="s-title reveal">The Hiring Protocol™</h2>
+    <p class="s-desc reveal" style="max-width:620px">A formally verified sequence diagram of what happens when you try to hire me. Spoiler: it ends well. Usually. <br/><span style="color:var(--mono-v);font-family:var(--fm);font-size:.75rem">// Animated on scroll · 100% accurate · 0% embellishment</span></p>
+
+    <div class="seq-wrap reveal">
+      <div class="seq-canvas" id="seqCanvas">
+
+        <!-- TOP ACTORS -->
+        <div class="seq-actors" id="seqActors">
+          <div class="seq-actor" id="actor-hr">
+            <div class="actor-box" id="box-hr"><span class="actor-emoji">📋</span>HR</div>
+            <div class="lifeline" id="ll-hr"></div>
+          </div>
+          <div class="seq-actor" id="actor-cto">
+            <div class="actor-box" id="box-cto"><span class="actor-emoji">🧠</span>CTO</div>
+            <div class="lifeline" id="ll-cto"></div>
+          </div>
+          <div class="seq-actor" id="actor-gouta">
+            <div class="actor-box gouta-box" id="box-gouta"><span class="actor-emoji">🚀</span>Gouta</div>
+            <div class="lifeline gouta-line" id="ll-gouta"></div>
+          </div>
+          <div class="seq-actor" id="actor-team">
+            <div class="actor-box" id="box-team"><span class="actor-emoji">⚡</span>Team</div>
+            <div class="lifeline" id="ll-team"></div>
+          </div>
+          <div class="seq-actor" id="actor-ceo">
+            <div class="actor-box" id="box-ceo"><span class="actor-emoji">💼</span>CEO</div>
+            <div class="lifeline" id="ll-ceo"></div>
+          </div>
+        </div>
+
+        <!-- SVG arrow layer -->
+        <svg id="seqSvg" style="position:absolute;top:0;left:0;width:100%;pointer-events:none;overflow:visible"></svg>
+
+        <!-- Step counter -->
+        <div class="seq-step-counter" id="seqCounter" style="position:absolute;bottom:-32px;right:0">Step <span id="stepNum">0</span> / <span id="stepTotal">0</span></div>
+
+      </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="seq-legend reveal" style="margin-top:3.5rem">
+      <div class="leg-item"><div class="leg-dot" style="background:var(--mono-dim)"></div>sync call</div>
+      <div class="leg-item"><div class="leg-dot" style="background:var(--mono-v)"></div>async / vibes check</div>
+      <div class="leg-item"><div class="leg-dot" style="background:var(--mono-g)"></div>gouta → world</div>
+      <div class="leg-item"><div class="leg-dot" style="background:var(--mono-r)"></div>rejection / error</div>
+      <div class="leg-item"><div class="leg-dot" style="background:var(--mono-y)"></div>loop / retry</div>
+      <div class="leg-item"><div class="leg-dot" style="background:repeating-linear-gradient(to right,var(--mono-dim) 0,var(--mono-dim) 4px,transparent 4px,transparent 8px)"></div>return</div>
+    </div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- PROJECTS -->
+<section class="sec" id="projects" style="background:var(--bg2)">
+  <div class="sec-in">
+    <span class="s-tag reveal">// Case Studies</span>
+    <h2 class="s-title reveal">Problems solved. Systems shipped.</h2>
+    <p class="s-desc reveal">Real projects, real constraints, real numbers.</p>
+    <div class="proj-grid stagger">
+      <div class="proj-card"><div class="proj-co">We-Settle · 2025</div><div class="proj-name">SMT Online Payment Platform</div><div class="plbl pb">Problem</div><div class="ptxt">Public sector needed a secure, auditable payment gateway handling 150K+ txn/month, on-premise.</div><div class="plbl ps">Solution</div><div class="ptxt">Fintech platform with Docker-isolated deployment, HashiCorp Vault, Gitea + Jenkins CI/CD. Led team of 4.</div><div class="mets"><span class="met">150K+ txn/month</span><span class="met">Team of 4</span><span class="met">Bank-grade security</span></div></div>
+      <div class="proj-card"><div class="proj-co">Bysur · 2024</div><div class="proj-name">Payload CRM — Insurance Brokers</div><div class="plbl pb">Problem</div><div class="ptxt">10+ insurance brokers needed a B2B CRM for quotes, contracts, payments, and cancellations with third-party APIs.</div><div class="plbl ps">Solution</div><div class="ptxt">Built from scratch: dynamic form generator, tRPC APIs for Zapier/n8n, full Jest coverage, shipped on time.</div><div class="mets"><span class="met">10+ brokers live</span><span class="met">Zapier/n8n APIs</span><span class="met">100% test coverage</span></div></div>
+      <div class="proj-card"><div class="proj-co">Bysur · 2024</div><div class="proj-name">ByRate — Workflow Automation</div><div class="plbl pb">Problem</div><div class="ptxt">Complex calculation trees and decision flows needed a visual editor non-technical users could operate.</div><div class="plbl ps">Solution</div><div class="ptxt">ReactFlow visual node editor with Redis caching for compute-heavy operations. Dramatically improved business UX.</div><div class="mets"><span class="met">Redis-optimized</span><span class="met">Visual node editor</span><span class="met">Non-tech UX</span></div></div>
+      <div class="proj-card"><div class="proj-co">HorizonLux · 2023</div><div class="proj-name">Revcall.io — Review Automation SaaS</div><div class="plbl pb">Problem</div><div class="ptxt">Local business owners needed automated review collection across Google and Facebook without manual follow-up.</div><div class="plbl ps">Solution</div><div class="ptxt">Full SaaS with SMS/email automation, Google Maps + Facebook integration. Scaled to 100+ businesses.</div><div class="mets"><span class="met">100+ businesses</span><span class="met">$50K+ US revenue</span><span class="met">Multi-platform</span></div></div>
+      <div class="proj-card"><div class="proj-co">HorizonLux · 2023</div><div class="proj-name">GptGold — AI Micro-Services</div><div class="plbl pb">Problem</div><div class="ptxt">Platform needed multiple AI capabilities as independent, scalable services without coupling to the monolith.</div><div class="plbl ps">Solution</div><div class="ptxt">5 AI micro-services on OpenAI: chat, image gen, TTS, STT, resume generation — independently deployed on AWS.</div><div class="mets"><span class="met">5 AI services</span><span class="met">Micro-service arch</span><span class="met">AWS Amplify</span></div></div>
+      <div class="proj-card"><div class="proj-co">HorizonLux · 2023</div><div class="proj-name">Indigo Vizual — Digital Signage</div><div class="plbl pb">Problem</div><div class="ptxt">Remote digital signage management was slow and error-prone with frequent downtime.</div><div class="plbl ps">Solution</div><div class="ptxt">Real-time management with Canva, Instagram, PowerBI integrations. Docker on AWS. −30% update time, −25% downtime.</div><div class="mets"><span class="met">−30% update time</span><span class="met">−25% downtime</span><span class="met">AWS + Docker</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- CONTACT -->
+<section class="sec" id="contact">
+  <div class="sec-in">
+    <span class="s-tag reveal">// Start Integration</span>
+    <h2 class="s-title reveal">Let's build something <span style="color:var(--violet)">great.</span></h2>
+    <p class="s-desc reveal">No cover letters, no gatekeepers. Reach out directly or fill the form below.</p>
+    <div class="contact-grid">
+      <div class="reveal-left">
+        <div class="contact-left">
+          <p style="font-size:.95rem;color:var(--ink2);line-height:1.8;margin-bottom:.5rem">Available for full-time positions, freelance day-rate work, and scoped project engagements. Response within 24 hours.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:monaam.bengouta@gmail.com" class="clink"><div class="clink-icon">✉</div>monaam.bengouta@gmail.com</a>
+          <a href="https://linkedin.com/in/monambengouta" target="_blank" class="clink"><div class="clink-icon" style="font-size:.75rem;font-weight:700">in</div>linkedin.com/in/monambengouta</a>
+          <a href="https://github.com/monambengouta" target="_blank" class="clink"><div class="clink-icon">⬡</div>github.com/monambengouta</a>
+          <a href="https://monam.bengouta.com" target="_blank" class="clink"><div class="clink-icon">◈</div>monam.bengouta.com</a>
+        </div>
+        <div style="margin-top:2rem;padding:1.4rem 1.6rem;background:var(--mono-bg);border-radius:12px;font-family:var(--fm);font-size:.8rem;line-height:1.9" class="reveal-left">
+          <span style="color:var(--mono-dim)"># fastest path to a response</span><br/>
+          <span style="color:var(--mono-b2)">$ gouta</span> <span style="color:var(--mono-v)">send</span> --proposal <span style="color:var(--mono-g)">"Your Role"</span><br/>
+          <span style="color:var(--mono-g)">→ 200 OK · Let's talk.</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="contact-form" id="contact-form-wrap">
+          <div class="form-title">Send a Proposal</div>
+          <div class="form-sub">Fill this out — it's faster than a cover letter, I promise.</div>
+          <div class="form-row">
+            <div class="form-group"><label>Name</label><input type="text" placeholder="Your name" id="f-name"/></div>
+            <div class="form-group"><label>Company</label><input type="text" placeholder="Your company" id="f-company"/></div>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="you@company.com" id="f-email"/></div>
+          <div class="form-group">
+            <label>Engagement Type</label>
+            <select id="f-type">
+              <option value="">Select type...</option>
+              <option>Full-time (45–55K€/year)</option>
+              <option>Freelance (350–500€/day)</option>
+              <option>Project-based (custom quote)</option>
+              <option>Just exploring</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Tell me what you're building</label><textarea placeholder="Describe your project, stack, team size, and timeline..." id="f-msg"></textarea></div>
+          <button class="form-submit" onclick="submitForm()">
+            <span id="submit-text">Send Proposal →</span>
+          </button>
+          <div class="form-success" id="form-success">
+            <div style="font-size:2.5rem;margin-bottom:.5rem">🚀</div>
+            <div class="form-success-title">Proposal received!</div>
+            <p style="font-size:.88rem;color:var(--ink2)">I'll get back to you within 24 hours. In the meantime, feel free to check my GitHub.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fl">GOUTA.DEV</div>
+  <div class="fr">Human Agent v1.0 · Senior Backend Engineer · Tunis, TN</div>
+  <div class="fst"><div class="sdot"></div> Available for hire</div>
+</footer>
+
+</div><!-- /page-main -->
+
+<!-- ════════ DOCS PAGE ════════ -->
+<div id="page-docs">
+<div class="docs-layout">
+  <aside class="docs-sidebar">
+    <div class="sg"><div class="sg-t">Getting Started</div><div class="sg-items"><div class="si on" onclick="showDoc('intro')">Introduction</div><div class="si" onclick="showDoc('what-is')">What is a Human Agent?</div></div></div>
+    <div class="sg"><div class="sg-t" style="color:var(--amber)">📋 For Recruiters</div><div class="sg-items"><div class="si" onclick="showDoc('rec-ov')">Overview</div><div class="si sub" onclick="showDoc('rec-1')">Step 1 — Don't Panic</div><div class="si sub" onclick="showDoc('rec-2')">Step 2 — Read the Resume</div><div class="si sub" onclick="showDoc('rec-3')">Step 3 — The Interview</div><div class="si sub" onclick="showDoc('rec-4')">Step 4 — Make the Offer</div><div class="si sub" onclick="showDoc('rec-5')">Step 5 — Onboarding</div><div class="si" onclick="showDoc('rec-faq')">Errors & FAQ</div></div></div>
+    <div class="sg"><div class="sg-t" style="color:var(--violet)">⚡ For Engineers</div><div class="sg-items"><div class="si" onclick="showDoc('eng-qs')">CLI Quickstart</div><div class="si sub" onclick="showDoc('eng-auth')">Authentication</div><div class="si sub" onclick="showDoc('eng-cmd')">Commands Reference</div><div class="si sub" onclick="showDoc('eng-err')">Error Handling</div><div class="si sub" onclick="showDoc('eng-stats')">Performance Metrics</div></div></div>
+    <div class="sg"><div class="sg-t">API Reference</div><div class="sg-items"><div class="si" onclick="showDoc('api-hire')">POST /hire</div><div class="si" onclick="showDoc('api-status')">GET /status</div><div class="si" onclick="showDoc('api-caps')">GET /capabilities</div></div></div>
+  </aside>
+
+  <main class="docs-content">
+    <!-- INTRO -->
+    <div class="doc-panel on" id="doc-intro">
+      <div class="doc-bc">Docs <span>/ Getting Started / Introduction</span></div>
+      <h1 class="doc-h1">Welcome to the Docs</h1>
+      <p class="doc-lead">You've found Monam Ben Gouta — a Senior Backend Engineer who operates like a deployable system. Choose your path:</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0">
+        <div onclick="showDoc('rec-ov')" style="padding:1.5rem;background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;cursor:pointer;transition:all .25s" onmouseover="this.style.borderColor='var(--amber)';this.style.background='#FFFBEB'" onmouseout="this.style.borderColor='var(--border)';this.style.background='var(--bg2)'">
+          <div style="font-size:1.5rem;margin-bottom:.6rem">📋</div>
+          <div style="font-family:var(--fh);font-weight:700;font-size:1rem;margin-bottom:.3rem">I'm a Recruiter</div>
+          <div style="font-size:.84rem;color:var(--ink2)">Plain English, funny steps, no terminal required.</div>
+        </div>
+        <div onclick="showDoc('eng-qs')" style="padding:1.5rem;background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;cursor:pointer;transition:all .25s" onmouseover="this.style.borderColor='var(--violet)';this.style.background='var(--violet-dim)'" onmouseout="this.style.borderColor='var(--border)';this.style.background='var(--bg2)'">
+          <div style="font-size:1.5rem;margin-bottom:.6rem">⚡</div>
+          <div style="font-family:var(--fh);font-weight:700;font-size:1rem;margin-bottom:.3rem">I'm a Developer / CTO</div>
+          <div style="font-size:.84rem;color:var(--ink2)">CLI guide, commands, specs. Let's skip the chat.</div>
+        </div>
+      </div>
+      <div class="doc-h2">Quick Stats</div>
+      <div class="fun-box"><span class="fh2">$ gouta info --brief</span><br/><br/><span class="fo">Name:       </span><span>Monam Ben Gouta</span><br/><span class="fo">Version:    </span><span>vSenior.1.0.0</span><br/><span class="fo">Stack:      </span><span>Node.js · TypeScript · PostgreSQL · Redis · Docker</span><br/><span class="fo">Experience: </span><span>5+ years, 4 companies, 3 countries' markets</span><br/><span class="fo">Mode:       </span><span>Full-time (45–55K€) or Freelance (350–500€/day)</span><br/><span class="fo">Location:   </span><span>Tunis, TN · Remote-first · UTC+1</span><br/><span class="fw">Warning:    </span><span>Runs on coffee · incompatible with micromanagement</span></div>
+      <div class="doc-nav-row"><div></div><div class="doc-nav-btn" onclick="showDoc('what-is')">What is a Human Agent? →</div></div>
+    </div>
+
+    <!-- WHAT IS -->
+    <div class="doc-panel" id="doc-what-is">
+      <div class="doc-bc">Docs <span>/ Getting Started / What is a Human Agent?</span></div>
+      <h1 class="doc-h1">What is a Human Agent?</h1>
+      <p class="doc-lead">Think of MCP servers — but instead of a digital API, this is a human one. You send inputs (problems, requirements, context), and you get outputs (shipped code, running systems, solved problems).</p>
+      <div class="doc-h2">Agent Specification</div>
+      <div class="fun-box"><span class="fh2">// Human Agent v1.0 — Spec</span><br/><br/><span class="fd">/**<br/> * @name         Monam Ben Gouta<br/> * @type         Senior Backend Engineer + Tech Lead<br/> * @runtime      Node.js, TypeScript, React<br/> * @persistence  Stateful (retains context across sprints)<br/> * @latency      &lt;24h response, day-1 productivity<br/> * @uptime       ~94.4% (excludes sleep mode, coffee breaks)<br/> * @scaling      Horizontal: can lead teams of 4+<br/> * @auth         Responds to salaries ≥ 45,000€/year<br/> * @errors       Throws SalaryTooLowException if underpaid<br/> */</span></div>
+      <div class="doc-h2">Comparison</div>
+      <table class="c-tbl"><thead><tr><th>Attribute</th><th>Traditional Hire</th><th>Human Agent v1.0</th></tr></thead><tbody><tr><td>Time to productivity</td><td class="bd">4–8 weeks</td><td class="gd">Day 1</td></tr><tr><td>Onboarding cost</td><td class="bd">High ($5K+ lost time)</td><td class="gd">Near zero</td></tr><tr><td>Seniority guaranteed</td><td class="bd">Title ≠ ability</td><td class="gd">5yr production history</td></tr><tr><td>Lead capability</td><td class="bd">Extra hire needed</td><td class="gd">Included</td></tr><tr><td>Domain expertise</td><td class="bd">Generalist bias</td><td class="gd">Fintech + SaaS + AI</td></tr><tr><td>Languages</td><td class="bd">Usually 1</td><td class="gd">French, English, Arabic</td></tr></tbody></table>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('intro')">← Introduction</div><div class="doc-nav-btn" onclick="showDoc('rec-ov')">For Recruiters →</div></div>
+    </div>
+
+    <!-- REC OVERVIEW -->
+    <div class="doc-panel" id="doc-rec-ov">
+      <div class="doc-bc">Docs <span>/ For Recruiters / Overview</span></div>
+      <h1 class="doc-h1">Recruiter Integration Guide</h1>
+      <p class="doc-lead">Congratulations! You've found a Senior Backend Engineer who actually knows what they're doing. This guide walks you through the hiring process without the jargon.</p>
+      <div class="info-box"><strong>📌 Who this is for:</strong> HR managers, recruiters, founders, and anyone who's ever Googled "what is a microservice" to understand a CV. No technical knowledge required. A sense of humour helps.</div>
+      <div class="doc-h2">The 5-Step Process</div>
+      <div class="step-wrap">
+        <div class="step"><div class="step-l"><div class="step-num">1</div><div class="step-line"></div></div><div class="step-b"><div class="step-title">Don't Panic</div><div class="step-desc">You've received a CV with scary words. Breathe. We have a translation table.</div></div></div>
+        <div class="step"><div class="step-l"><div class="step-num">2</div><div class="step-line"></div></div><div class="step-b"><div class="step-title">Read the Resume</div><div class="step-desc">Jargon-to-English dictionary provided. No prior knowledge required.</div></div></div>
+        <div class="step"><div class="step-l"><div class="step-num">3</div><div class="step-line"></div></div><div class="step-b"><div class="step-title">Run the Interview</div><div class="step-desc">Questions to ask, questions to absolutely avoid, and how to survive the technical part.</div></div></div>
+        <div class="step"><div class="step-l"><div class="step-num">4</div><div class="step-line"></div></div><div class="step-b"><div class="step-title">Make the Offer</div><div class="step-desc">There is a valid salary range. Stay inside it or trigger an exception.</div></div></div>
+        <div class="step"><div class="step-l"><div class="step-num">5</div><div class="step-line"></div></div><div class="step-b"><div class="step-title">Onboarding</div><div class="step-desc">What to do (and not do) once you've hired a human system. Mostly: get out of the way.</div></div></div>
+      </div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('what-is')">← What is a Human Agent?</div><div class="doc-nav-btn" onclick="showDoc('rec-1')">Step 1 →</div></div>
+    </div>
+
+    <!-- REC 1 -->
+    <div class="doc-panel" id="doc-rec-1">
+      <div class="doc-bc">Docs <span>/ For Recruiters / Step 1 — Don't Panic</span></div>
+      <h1 class="doc-h1">Step 1 — Don't Panic</h1>
+      <p class="doc-lead">You've opened a CV and been greeted by "tRPC", "micro-service orchestration" and "HashiCorp Vault." This is normal. The CV is not broken.</p>
+      <div class="doc-h2">What You're Actually Looking At</div>
+      <p class="doc-p">Monam is a <strong>Senior Backend Engineer</strong> — he builds the part of software you never see but absolutely depends on. Think plumbing: nobody looks at pipes, but you notice immediately when they stop working.</p>
+      <div class="warn-box"><strong>⚠️ Common Mistake:</strong> Forwarding the CV to a technical colleague and asking "is this guy good?" without reading it first. Use the translation table in Step 2 instead.</div>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;margin:1rem 0">
+        <div style="padding:1.2rem;background:var(--violet-dim);border:1px solid var(--violet-mid);border-radius:8px"><div style="font-family:var(--fh);font-size:1.6rem;font-weight:800;color:var(--violet)">5+</div><div style="font-size:.82rem;color:var(--violet-text)">years building software that didn't break in production</div></div>
+        <div style="padding:1.2rem;background:var(--violet-dim);border:1px solid var(--violet-mid);border-radius:8px"><div style="font-family:var(--fh);font-size:1.6rem;font-weight:800;color:var(--violet)">4</div><div style="font-size:.82rem;color:var(--violet-text)">engineers led simultaneously without anyone rage-quitting</div></div>
+        <div style="padding:1.2rem;background:var(--violet-dim);border:1px solid var(--violet-mid);border-radius:8px"><div style="font-family:var(--fh);font-size:1.6rem;font-weight:800;color:var(--violet)">100+</div><div style="font-size:.82rem;color:var(--violet-text)">businesses that used his software and were happy</div></div>
+        <div style="padding:1.2rem;background:var(--violet-dim);border:1px solid var(--violet-mid);border-radius:8px"><div style="font-family:var(--fh);font-size:1.6rem;font-weight:800;color:var(--violet)">$50K+</div><div style="font-size:.82rem;color:var(--violet-text)">revenue generated for clients in the US market</div></div>
+      </div>
+      <div class="ok-box"><strong>✅ Green flag:</strong> A senior engineer with a Master's (GPA 16.71/20), 5+ years production experience, and proven team lead history doesn't show up every Tuesday. Move fast.</div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('rec-ov')">← Overview</div><div class="doc-nav-btn" onclick="showDoc('rec-2')">Step 2 →</div></div>
+    </div>
+
+    <!-- REC 2 -->
+    <div class="doc-panel" id="doc-rec-2">
+      <div class="doc-bc">Docs <span>/ For Recruiters / Step 2 — Read the Resume</span></div>
+      <h1 class="doc-h1">Step 2 — Reading the Resume</h1>
+      <p class="doc-lead">The CV contains technical terms. Every scary word has a plain English equivalent, and most just mean "he built something impressive."</p>
+      <div class="doc-h2">Official Jargon Translation Table</div>
+      <table class="t-tbl"><thead><tr><th>What It Says</th><th>What It Actually Means</th></tr></thead><tbody>
+        <tr><td>Micro-service architecture</td><td>Very organised code. Like a city with districts — not a junk drawer. 🏙️</td></tr>
+        <tr><td>CI/CD pipelines</td><td>Software ships itself automatically. Amazon Prime, but for code updates.</td></tr>
+        <tr><td>Redis caching</td><td>Things load really, really fast. Satisfyingly fast.</td></tr>
+        <tr><td>HashiCorp Vault</td><td>Passwords stored in a digital Fort Knox. Very, very safe.</td></tr>
+        <tr><td>Led a team of 4 engineers</td><td>He was the boss. Diplomatically. Nobody quit.</td></tr>
+        <tr><td>150K+ transactions/month</td><td>The system handled a LOT simultaneously, and nothing broke. That's rare.</td></tr>
+        <tr><td>Jest / Vitest (testing)</td><td>He checks his own work before you have to. Tragically rare quality.</td></tr>
+        <tr><td>Docker</td><td>Software that works on his laptop also works on your servers. Revolutionary.</td></tr>
+        <tr><td>GPA 16.71/20</td><td>Near top of class. In a French engineering school. That's excellent.</td></tr>
+      </tbody></table>
+      <div class="warn-box"><strong>⚠️ Warning:</strong> If you're comparing this CV to someone who describes themselves as "passionate about synergizing cross-functional deliverables" — you're comparing a chef to a menu writer.</div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('rec-1')">← Step 1</div><div class="doc-nav-btn" onclick="showDoc('rec-3')">Step 3 →</div></div>
+    </div>
+
+    <!-- REC 3 -->
+    <div class="doc-panel" id="doc-rec-3">
+      <div class="doc-bc">Docs <span>/ For Recruiters / Step 3 — The Interview</span></div>
+      <h1 class="doc-h1">Step 3 — The Interview</h1>
+      <p class="doc-lead">The interview is two-way. You're evaluating him. He's also quietly evaluating whether your company is worth his time.</p>
+      <div class="doc-h2">✅ Questions That Work</div>
+      <div class="ok-box"><strong>Great questions:</strong><br/>• "Walk me through a system you built that you're proud of."<br/>• "How do you handle technical disagreements with your team?"<br/>• "What would you change about our current tech stack?" (share it first)<br/>• "What kinds of problems do you find most energising?"</div>
+      <div class="doc-h2">🚫 Questions to Avoid</div>
+      <div class="fun-box"><span class="fb2">❌ "Where do you see yourself in 5 years?"</span><br/><span class="fd">   // Throws: CandidateDisengagementException</span><br/><br/><span class="fb2">❌ "Can you work for equity only?"</span><br/><span class="fd">   // Throws: SalaryTooLowException · 402 Payment Required</span><br/><br/><span class="fb2">❌ "We're like a family here!"</span><br/><span class="fd">   // Warning: RedFlag · Candidate calculating exit time</span><br/><br/><span class="fb2">❌ "Quick 8-hour unpaid test project?"</span><br/><span class="fd">   // Fatal: UnpaidTestException · Process terminated</span></div>
+      <div class="info-box"><strong>💡 Tip:</strong> If the tech interviewer exits saying "yeah, he's solid" — that means "he's excellent and I'm mildly jealous." Proceed to offer immediately.</div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('rec-2')">← Step 2</div><div class="doc-nav-btn" onclick="showDoc('rec-4')">Step 4 →</div></div>
+    </div>
+
+    <!-- REC 4 -->
+    <div class="doc-panel" id="doc-rec-4">
+      <div class="doc-bc">Docs <span>/ For Recruiters / Step 4 — Make the Offer</span></div>
+      <h1 class="doc-h1">Step 4 — Making the Offer</h1>
+      <p class="doc-lead">The offer must fall within a specific range or you'll trigger an exception. This is not negotiable. It is, however, very reasonable.</p>
+      <div class="fun-box"><span class="fh2">// Valid offer parameters</span><br/><br/><span class="dv">const</span> <span class="dt">offer</span> = {<br/>&nbsp;&nbsp;<span class="db2">type</span>: <span class="dg">"full-time"</span>,<br/>&nbsp;&nbsp;<span class="db2">salary</span>: <span class="dy">45000</span> <span class="dm">/* to 55000 */</span><br/>}<br/><br/><span class="dm">// OR:</span><br/><span class="dv">const</span> <span class="dt">offer</span> = {<br/>&nbsp;&nbsp;<span class="db2">type</span>: <span class="dg">"freelance"</span>,<br/>&nbsp;&nbsp;<span class="db2">dailyRate</span>: <span class="dy">350</span> <span class="dm">/* to 500 */</span><br/>}</div>
+      <div class="err-box"><strong>❌ SalaryTooLowException</strong> — Thrown below 45K€/year or below 350€/day. Recovery: increase the number. There is no patch.</div>
+      <div class="ok-box"><strong>✅ Why this is great ROI:</strong> The same seniority costs $120K+ in the US or €80K+ in Western Europe. Bad hires of this level cost 3× salary in cleanup. You're paying for certainty.</div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('rec-3')">← Step 3</div><div class="doc-nav-btn" onclick="showDoc('rec-5')">Step 5 →</div></div>
+    </div>
+
+    <!-- REC 5 -->
+    <div class="doc-panel" id="doc-rec-5">
+      <div class="doc-bc">Docs <span>/ For Recruiters / Step 5 — Onboarding</span></div>
+      <h1 class="doc-h1">Step 5 — Onboarding</h1>
+      <p class="doc-lead">🎉 You've cleared all steps without triggering a fatal exception. Here's how not to break a working system.</p>
+      <div class="ok-box"><strong>✅ Do these:</strong><br/>• Give codebase access on day one<br/>• Let him ask "why is this built this way?" — he's understanding, not criticising<br/>• Include him in architecture discussions from week one<br/>• Assign a real task in the first week<br/>• Use async communication — he's in UTC+1</div>
+      <div class="err-box"><strong>❌ Don't:</strong><br/>• Micromanage. He's been a tech lead.<br/>• Ask him to "just add a button" on a spaghetti codebase without addressing the spaghetti<br/>• Schedule 3-hour meetings for decisions that could be a Slack message<br/>• Change scope on Friday at 4pm and ask for it Monday</div>
+      <div class="fun-box"><span class="fh2">$ gouta status --after "30 days"</span><br/><br/><span class="fo">✔ Codebase understood</span><br/><span class="fo">✔ Team integrated</span><br/><span class="fo">✔ First feature shipped</span><br/><span class="fw">⚠ Tech debt list: growing (healthy behaviour)</span><br/><span class="fo">✔ Coffee dependency: stable</span></div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('rec-4')">← Step 4</div><div class="doc-nav-btn" onclick="showDoc('rec-faq')">Errors & FAQ →</div></div>
+    </div>
+
+    <!-- REC FAQ -->
+    <div class="doc-panel" id="doc-rec-faq">
+      <div class="doc-bc">Docs <span>/ For Recruiters / Errors & FAQ</span></div>
+      <h1 class="doc-h1">Errors & FAQ</h1>
+      <div class="fun-box"><span class="fh2">// Exception Reference</span><br/><br/><span class="fb2">SalaryTooLowException</span> <span class="fd">// 402 Payment Required</span><br/><span class="fd">→ Resolution: Increase to 45–55K€/yr or 350–500€/day</span><br/><br/><span class="fb2">EquityOnlyException</span> <span class="fd">// 400 Bad Request</span><br/><span class="fd">→ Resolution: Pay people in money, not dreams</span><br/><br/><span class="fb2">UnpaidTestException</span> <span class="fd">// 403 Forbidden</span><br/><span class="fd">→ Resolution: github.com/monambengouta exists. Use it.</span><br/><br/><span class="fb2">MicromanagementException</span> <span class="fd">// 500 Internal Server Error</span><br/><span class="fd">→ Resolution: Assign task → set deadline → trust process</span><br/><br/><span class="fb2">SlowHiringException</span> <span class="fd">// 504 Gateway Timeout</span><br/><span class="fd">→ Resolution: Good candidates collect offers like Pokémon. Move faster.</span><br/><br/><span class="fw">CoffeeDepletedException</span> <span class="fd">// 503 Service Unavailable</span><br/><span class="fd">→ Resolution: Provide coffee. Service restored in 100ms.</span></div>
+      <div class="doc-h3">Q: Is he available immediately?</div><p class="doc-p">A: Yes. <code class="ic">availability: immediate</code>. No 3-month notice period.</p>
+      <div class="doc-h3">Q: Can he work fully remote?</div><p class="doc-p">A: Preferred. Tunis (UTC+1) overlaps well with European and Middle Eastern business hours.</p>
+      <div class="doc-h3">Q: Do I need to understand the tech to hire him?</div><p class="doc-p">A: No. That's why this page exists. You've made it to the FAQ — you're doing great.</p>
+      <div class="ok-box"><strong>🎉 You made it!</strong> Email <strong>monaam.bengouta@gmail.com</strong> and reference "I read the whole docs" for priority response. This is a real offer.</div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('rec-5')">← Step 5</div><div class="doc-nav-btn" onclick="showDoc('eng-qs')">For Engineers →</div></div>
+    </div>
+
+    <!-- ENG QS -->
+    <div class="doc-panel" id="doc-eng-qs">
+      <div class="doc-bc">Docs <span>/ For Engineers / CLI Quickstart</span></div>
+      <h1 class="doc-h1">CLI Quickstart</h1>
+      <p class="doc-lead">You're a developer, CTO, or tech-savvy founder. Here's the full CLI reference to integrate a Senior Backend Engineer into your stack.</p>
+      <div class="cb"><div class="cb-head"><div class="cb-dots2"><div class="cbd r"></div><div class="cbd y"></div><div class="cbd g"></div></div><div class="cb-lang">bash</div></div><div class="cb-body">
+<span class="dm"># Install globally</span>
+<span class="dv">npm</span> install -g gouta-cli
+
+<span class="dv">gouta</span> --version
+<span class="dg">vSenior.1.0.0</span>
+
+<span class="dm"># Health check</span>
+<span class="dv">gouta</span> doctor
+<span class="dg">✔ Coffee supply: stable</span>
+<span class="dg">✔ Budget: in valid range</span>
+<span class="dg">✔ Reasonable expectations: confirmed</span>
+
+<span class="dm"># Quick hire</span>
+<span class="dv">gouta</span> hire --type full-time --salary 50000
+<span class="dg">✔ Deploying Monam Ben Gouta...</span>
+<span class="dg">✔ ETA: Day 1 productivity</span>
+<span class="dg">✔ Onboarding overhead: ~0</span></div></div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('rec-faq')">← For Recruiters</div><div class="doc-nav-btn" onclick="showDoc('eng-auth')">Authentication →</div></div>
+    </div>
+
+    <!-- ENG AUTH -->
+    <div class="doc-panel" id="doc-eng-auth">
+      <div class="doc-bc">Docs <span>/ For Engineers / Authentication</span></div>
+      <h1 class="doc-h1">Authentication</h1>
+      <div class="cb"><div class="cb-head"><div class="cb-dots2"><div class="cbd r"></div><div class="cbd y"></div><div class="cbd g"></div></div><div class="cb-lang">bash</div></div><div class="cb-body">
+<span class="dv">gouta</span> login --email monaam.bengouta@gmail.com
+<span class="dv">gouta</span> login --linkedin linkedin.com/in/monambengouta
+
+<span class="dv">gouta</span> schedule --duration 30min
+<span class="dg">→ Calendar link sent</span>
+<span class="dg">→ Agenda: stack, team, timeline, expectations</span>
+
+<span class="dm"># Response SLA</span>
+<span class="dg">✔ Email:    &lt;24h</span>
+<span class="dg">✔ LinkedIn: &lt;12h</span>
+<span class="dm"># Sleep mode: 23:00–07:00 UTC+1</span></div></div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('eng-qs')">← Quickstart</div><div class="doc-nav-btn" onclick="showDoc('eng-cmd')">Commands →</div></div>
+    </div>
+
+    <!-- ENG CMD -->
+    <div class="doc-panel" id="doc-eng-cmd">
+      <div class="doc-bc">Docs <span>/ For Engineers / Commands Reference</span></div>
+      <h1 class="doc-h1">Commands Reference</h1>
+      <div class="cb"><div class="cb-head"><div class="cb-dots2"><div class="cbd r"></div><div class="cbd y"></div><div class="cbd g"></div></div><div class="cb-lang">bash</div></div><div class="cb-body">
+<span class="dv">gouta</span> status
+<span class="dg">● AVAILABLE</span>
+<span class="db2">  Mode:     </span><span>Full-time + freelance open</span>
+<span class="db2">  Location: </span><span>Tunis, TN — Remote-first</span>
+<span class="db2">  Stack:    </span><span>Node.js, TypeScript, PostgreSQL, Redis, Docker</span>
+
+<span class="dv">gouta</span> capabilities --verbose
+<span class="dg">✔ Backend Architecture  </span><span class="dm">Node.js · NestJS · Express · Hono · tRPC</span>
+<span class="dg">✔ Fullstack Dev         </span><span class="dm">React · Next.js · Angular · React Native</span>
+<span class="dg">✔ Database Systems      </span><span class="dm">PostgreSQL · Redis · MongoDB · SQL Server</span>
+<span class="dg">✔ SaaS Platforms        </span><span class="dm">Multi-tenant · Auth · Billing · Audit</span>
+<span class="dg">✔ AI Integrations       </span><span class="dm">OpenAI · micro-services · pipelines</span>
+<span class="dg">✔ DevOps / CI/CD        </span><span class="dm">Docker · GH Actions · Jenkins · GCP · AWS</span>
+<span class="dg">✔ Tech Lead             </span><span class="dm">Agile · sprint planning · code reviews</span>
+
+<span class="dv">gouta</span> hire --type full-time --salary 50000
+<span class="dv">gouta</span> hire --type freelance --rate 400/day
+<span class="dv">gouta</span> schedule --time "2026-05-20 14:00"</div></div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('eng-auth')">← Authentication</div><div class="doc-nav-btn" onclick="showDoc('eng-err')">Error Handling →</div></div>
+    </div>
+
+    <!-- ENG ERR -->
+    <div class="doc-panel" id="doc-eng-err">
+      <div class="doc-bc">Docs <span>/ For Engineers / Error Handling</span></div>
+      <h1 class="doc-h1">Error Handling</h1>
+      <div class="cb"><div class="cb-head"><div class="cb-dots2"><div class="cbd r"></div><div class="cbd y"></div><div class="cbd g"></div></div><div class="cb-lang">bash</div></div><div class="cb-body">
+<span class="dv">gouta</span> hire --salary 15000
+<span class="dr">✗ SalaryTooLowException</span>
+<span class="dy">→ Valid range: 45000–55000/year or 350–500/day</span>
+
+<span class="dv">gouta</span> hire --compensation equity-only
+<span class="dr">✗ EquityOnlyException: 402 Payment Required</span>
+
+<span class="dv">gouta</span> send --task "8-hour unpaid test"
+<span class="dr">✗ UnpaidTestException: 403 Forbidden</span>
+<span class="dy">→ Hint: github.com/monambengouta exists. Use it.</span>
+
+<span class="dm"># Runtime: MicromanagementException</span>
+<span class="dr">✗ 500 Internal Server Error</span>
+<span class="dy">→ Assign task → set deadline → step back</span></div></div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('eng-cmd')">← Commands</div><div class="doc-nav-btn" onclick="showDoc('eng-stats')">Performance Metrics →</div></div>
+    </div>
+
+    <!-- ENG STATS -->
+    <div class="doc-panel" id="doc-eng-stats">
+      <div class="doc-bc">Docs <span>/ For Engineers / Performance Metrics</span></div>
+      <h1 class="doc-h1">Performance Metrics</h1>
+      <div class="cb"><div class="cb-head"><div class="cb-dots2"><div class="cbd r"></div><div class="cbd y"></div><div class="cbd g"></div></div><div class="cb-lang">bash</div></div><div class="cb-body">
+<span class="dv">gouta</span> stats --full
+
+<span class="dm">── Experience ─────────────────────────────────</span>
+<span class="db2">Total YoE:         </span><span class="dg">5+ years</span>
+<span class="db2">Companies led:     </span><span class="dg">3 (tech lead, teams of 4+)</span>
+<span class="db2">Volume:            </span><span class="dg">150,000+ txn/month at We-Settle</span>
+<span class="db2">Clients served:    </span><span class="dg">100+ businesses</span>
+<span class="db2">Revenue generated: </span><span class="dg">$50K+ (US market)</span>
+
+<span class="dm">── Education ──────────────────────────────────</span>
+<span class="db2">Degree:            </span><span class="dg">Master's in Computer Engineering</span>
+<span class="db2">GPA:               </span><span class="dg">16.71/20 (near top of class)</span>
+
+<span class="dm">── Runtime Config ─────────────────────────────</span>
+<span class="db2">Languages:         </span><span class="dg">French, English, Arabic</span>
+<span class="db2">Timezone:          </span><span class="dg">UTC+1 — Remote-first</span>
+<span class="dy">Compatibility:     </span><span class="dg">Chaotic startups · fintech · B2B SaaS</span>
+<span class="db2">Coffee:            </span><span class="dg">Always on</span></div></div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('eng-err')">← Error Handling</div><div class="doc-nav-btn" onclick="showDoc('api-hire')">API Reference →</div></div>
+    </div>
+
+    <!-- API HIRE -->
+    <div class="doc-panel" id="doc-api-hire">
+      <div class="doc-bc">Docs <span>/ API Reference / POST /hire</span></div>
+      <h1 class="doc-h1">POST /hire</h1>
+      <div class="cb"><div class="cb-head"><div class="cb-dots2"><div class="cbd r"></div><div class="cbd y"></div><div class="cbd g"></div></div><div class="cb-lang">bash</div></div><div class="cb-body">
+<span class="dv">curl</span> -X POST gouta.dev/api/hire \
+  -H <span class="dg">"Content-Type: application/json"</span> \
+  -d <span class="dg">'{"type":"full-time","salary":50000}'</span>
+
+<span class="dm"># 200:</span>
+{ <span class="db2">"status"</span>: <span class="dg">"accepted"</span>, <span class="db2">"eta"</span>: <span class="dg">"&lt;24h"</span>, <span class="db2">"message"</span>: <span class="dg">"Let's build."</span> }
+
+<span class="dm"># 402:</span>
+{ <span class="db2">"error"</span>: <span class="dr">"SalaryTooLowException"</span>, <span class="db2">"hint"</span>: <span class="dy">"See /pricing"</span> }</div></div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('eng-stats')">← Metrics</div><div class="doc-nav-btn" onclick="showDoc('api-status')">GET /status →</div></div>
+    </div>
+
+    <!-- API STATUS -->
+    <div class="doc-panel" id="doc-api-status">
+      <div class="doc-bc">Docs <span>/ API Reference / GET /status</span></div>
+      <h1 class="doc-h1">GET /status</h1>
+      <div class="cb"><div class="cb-head"><div class="cb-dots2"><div class="cbd r"></div><div class="cbd y"></div><div class="cbd g"></div></div><div class="cb-lang">bash</div></div><div class="cb-body">
+<span class="dv">curl</span> gouta.dev/api/status
+
+{ <span class="db2">"available"</span>: <span class="dg">true</span>, <span class="db2">"modes"</span>: [<span class="dg">"full-time"</span>,<span class="dg">"freelance"</span>,<span class="dg">"project"</span>],
+  <span class="db2">"location"</span>: <span class="dg">"Tunis, TN"</span>, <span class="db2">"timezone"</span>: <span class="dg">"UTC+1"</span>,
+  <span class="db2">"responseTime"</span>: <span class="dg">"&lt;24h"</span>, <span class="db2">"coffeeLevel"</span>: <span class="dg">"nominal"</span> }</div></div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('api-hire')">← POST /hire</div><div class="doc-nav-btn" onclick="showDoc('api-caps')">GET /capabilities →</div></div>
+    </div>
+
+    <!-- API CAPS -->
+    <div class="doc-panel" id="doc-api-caps">
+      <div class="doc-bc">Docs <span>/ API Reference / GET /capabilities</span></div>
+      <h1 class="doc-h1">GET /capabilities</h1>
+      <div class="cb"><div class="cb-head"><div class="cb-dots2"><div class="cbd r"></div><div class="cbd y"></div><div class="cbd g"></div></div><div class="cb-lang">bash</div></div><div class="cb-body">
+<span class="dv">curl</span> gouta.dev/api/capabilities
+
+{ <span class="db2">"backend"</span>: [<span class="dg">"Node.js"</span>,<span class="dg">"NestJS"</span>,<span class="dg">"Express"</span>,<span class="dg">"Hono"</span>,<span class="dg">"tRPC"</span>],
+  <span class="db2">"frontend"</span>: [<span class="dg">"React"</span>,<span class="dg">"Next.js"</span>,<span class="dg">"Angular"</span>,<span class="dg">"React Native"</span>],
+  <span class="db2">"databases"</span>: [<span class="dg">"PostgreSQL"</span>,<span class="dg">"Redis"</span>,<span class="dg">"MongoDB"</span>,<span class="dg">"SQL Server"</span>],
+  <span class="db2">"devops"</span>: [<span class="dg">"Docker"</span>,<span class="dg">"GitHub Actions"</span>,<span class="dg">"Jenkins"</span>,<span class="dg">"GCP"</span>,<span class="dg">"AWS"</span>],
+  <span class="db2">"domains"</span>: [<span class="dg">"fintech"</span>,<span class="dg">"saas"</span>,<span class="dg">"ai"</span>,<span class="dg">"b2b"</span>],
+  <span class="db2">"coffeeRequired"</span>: <span class="dg">true</span> }</div></div>
+      <div class="doc-nav-row"><div class="doc-nav-btn" onclick="showDoc('api-status')">← GET /status</div><div></div></div>
+    </div>
+  </main>
+
+  <aside class="docs-toc">
+    <div class="toc-title">On this page</div>
+    <div class="toc-items" id="toc-items"></div>
+  </aside>
+</div>
+</div>
+
+<script>
+/* ══ TYPEWRITER ══ */
+const lines=['Hire a\nHuman Agent.','Your On-Demand\nSenior Engineer.','Integrate.\nShip. Repeat.'];
+let li=0,ci=0,typing=true,pausing=false;
+const tel=document.getElementById('typed-text');
+const curStyle=document.createElement('style');
+curStyle.textContent='#typed-text::after{content:"|";color:var(--violet);animation:blink-c .75s steps(1) infinite}';
+document.head.appendChild(curStyle);
+function type(){
+  if(pausing)return;
+  const ln=lines[li];
+  if(typing){tel.innerHTML=ln.slice(0,ci+1).replace('\n','<br/>');ci++;if(ci>=ln.length){typing=false;pausing=true;setTimeout(()=>pausing=false,2400)}}
+  else{tel.innerHTML=ln.slice(0,ci-1).replace('\n','<br/>');ci--;if(ci<=0){typing=true;li=(li+1)%lines.length;ci=0;pausing=true;setTimeout(()=>pausing=false,500)}}
+}
+setInterval(type,60);
+
+/* ══ SCROLL ANIMATIONS ══ */
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('in');
+      e.target.querySelectorAll('.skill-fill').forEach(b=>{b.style.width=b.dataset.w+'%'});
+    }
+  });
+},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-scale,.stagger').forEach((el,i)=>{
+  el.style.transitionDelay=(i%6)*.06+'s';
+  revealObs.observe(el);
+});
+
+/* ══ PAGE ROUTING ══ */
+function showPage(p){
+  document.getElementById('page-main').style.display=p==='main'?'block':'none';
+  const dp=document.getElementById('page-docs');
+  dp.style.display=p==='docs'?'flex':'none';
+  if(p==='docs')dp.style.flexDirection='column';
+  document.getElementById('docs-btn').classList.toggle('on',p==='docs');
+  window.scrollTo(0,0);
+}
+function goTo(id){
+  showPage('main');
+  setTimeout(()=>{const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'})},80);
+}
+
+/* ══ NAV SHADOW ══ */
+window.addEventListener('scroll',()=>document.getElementById('main-nav').classList.toggle('shadow',window.scrollY>40));
+
+/* ══ DOCS ══ */
+const tocMap={'intro':['Quick Stats'],'what-is':['Agent Specification','Comparison'],'rec-ov':['5-Step Process'],'rec-1':['What You\'re Looking At','The Stats'],'rec-2':['Translation Table'],'rec-3':['Questions That Work','Questions to Avoid'],'rec-4':['Valid Parameters','Errors'],'rec-5':['Do These','Don\'t','Day 30 Output'],'rec-faq':['Exception Reference','FAQ'],'eng-qs':['Installation','Quick Deploy'],'eng-auth':['Auth Flow'],'eng-cmd':['Core Commands'],'eng-err':['Error Reference'],'eng-stats':['Experience','Education','Runtime'],'api-hire':['Request','Response'],'api-status':['Response'],'api-caps':['Schema']};
+function showDoc(id){
+  document.querySelectorAll('.doc-panel').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.si').forEach(s=>s.classList.remove('on'));
+  const panel=document.getElementById('doc-'+id);
+  if(panel)panel.classList.add('on');
+  document.querySelectorAll('.si').forEach(s=>{if(s.getAttribute('onclick')&&s.getAttribute('onclick').includes("'"+id+"'"))s.classList.add('on')});
+  document.getElementById('toc-items').innerHTML=(tocMap[id]||[]).map(t=>`<div class="toc-i">${t}</div>`).join('');
+  window.scrollTo(0,0);
+}
+
+/* ══ CONTACT FORM ══ */
+function submitForm(){
+  const name=document.getElementById('f-name').value;
+  const email=document.getElementById('f-email').value;
+  const msg=document.getElementById('f-msg').value;
+  if(!name||!email||!msg){
+    const btn=document.querySelector('.form-submit');
+    btn.style.background='var(--red)';
+    document.getElementById('submit-text').textContent='Fill required fields ✕';
+    setTimeout(()=>{btn.style.background='var(--ink)';document.getElementById('submit-text').textContent='Send Proposal →'},2000);
+    return;
+  }
+  const btn=document.querySelector('.form-submit');
+  btn.style.background='var(--violet)';
+  document.getElementById('submit-text').textContent='Sending...';
+  setTimeout(()=>{
+    document.getElementById('contact-form-wrap').style.opacity='0';
+    document.getElementById('contact-form-wrap').style.transform='translateY(-10px)';
+    document.getElementById('contact-form-wrap').style.transition='all .4s ease';
+    setTimeout(()=>{
+      document.getElementById('contact-form-wrap').innerHTML=`<div style="text-align:center;padding:3rem 2rem"><div style="font-size:3rem;margin-bottom:1rem">🚀</div><div style="font-family:var(--fh);font-size:1.4rem;font-weight:800;color:var(--ink);margin-bottom:.6rem">Proposal received!</div><p style="font-size:.9rem;color:var(--ink2);line-height:1.8">I'll get back to you within 24 hours.<br/>In the meantime, check the <a href="https://github.com/monambengouta" target="_blank" style="color:var(--violet);text-decoration:underline">GitHub</a>.</p></div>`;
+      document.getElementById('contact-form-wrap').style.opacity='1';
+      document.getElementById('contact-form-wrap').style.transform='none';
+    },350);
+  },1200);
+}
+
+/* ══ TERMINAL ANIMATION ══ */
+const termData={
+  hire:[
+    {t:'prompt',v:'$ '},
+    {t:'cmd',v:'npm install -g gouta-cli',delay:400},
+    {t:'out-ok',v:'+ gouta-cli@1.0.0',delay:800},
+    {t:'out-ok',v:'added 1 package in 0.42s',delay:100},
+    {t:'spacer'},
+    {t:'prompt',v:'$ '},
+    {t:'cmd',v:'gouta hire --type full-time --salary 50000',delay:600},
+    {t:'out-ok',v:'✔ Validating parameters...',delay:500},
+    {t:'out-ok',v:'✔ SalaryRange: 45000–55000 ✓ valid',delay:300},
+    {t:'out-ok',v:'✔ Initializing Monam Ben Gouta...',delay:400},
+    {t:'out-ok',v:'✔ vSenior.1.0.0 — deploying',delay:600},
+    {t:'out-ok',v:'✔ Onboarding overhead: ~0 days',delay:300},
+    {t:'out-ok',v:'✔ Day 1 productivity: enabled',delay:300},
+    {t:'spacer'},
+    {t:'out-info',v:'→ Next step: gouta schedule --duration 30min',delay:500},
+    {t:'cursor'},
+  ],
+  status:[
+    {t:'prompt',v:'$ '},{t:'cmd',v:'gouta status',delay:500},
+    {t:'out-ok',v:'● AVAILABLE',delay:600},
+    {t:'out-info',v:'  Name:       Monam Ben Gouta',delay:100},
+    {t:'out-info',v:'  Role:       Senior Backend Engineer + Tech Lead',delay:100},
+    {t:'out-info',v:'  Location:   Tunis, TN (UTC+1)',delay:100},
+    {t:'out-info',v:'  Modes:      full-time · freelance · project',delay:100},
+    {t:'out-info',v:'  Stack:      Node.js · TypeScript · PostgreSQL · Redis',delay:100},
+    {t:'out-info',v:'  Response:   <24h',delay:100},
+    {t:'out-info',v:'  Sleep:      23:00–07:00 UTC+1',delay:100},
+    {t:'out-ok',v:'  Coffee:     always on ☕',delay:200},
+    {t:'spacer'},
+    {t:'out-info',v:'→ Run: gouta hire --type full-time',delay:400},
+    {t:'cursor'},
+  ],
+  caps:[
+    {t:'prompt',v:'$ '},{t:'cmd',v:'gouta capabilities --verbose',delay:500},
+    {t:'out-ok',v:'✔ Backend Architecture',delay:400},{t:'out-info',v:'  Node.js · NestJS · Express · Hono · tRPC',delay:50},
+    {t:'out-ok',v:'✔ Fullstack Dev',delay:300},{t:'out-info',v:'  React · Next.js · Angular · React Native',delay:50},
+    {t:'out-ok',v:'✔ Database Systems',delay:300},{t:'out-info',v:'  PostgreSQL · Redis · MongoDB · SQL Server',delay:50},
+    {t:'out-ok',v:'✔ SaaS Platforms',delay:300},{t:'out-info',v:'  Multi-tenant · Auth · Billing · Audit',delay:50},
+    {t:'out-ok',v:'✔ AI Integrations',delay:300},{t:'out-info',v:'  OpenAI · micro-services · pipelines',delay:50},
+    {t:'out-ok',v:'✔ Fintech Systems',delay:300},{t:'out-info',v:'  Payments · reconciliation · HashiCorp Vault',delay:50},
+    {t:'out-ok',v:'✔ DevOps / CI/CD',delay:300},{t:'out-info',v:'  Docker · GH Actions · Jenkins · GCP · AWS',delay:50},
+    {t:'out-ok',v:'✔ Tech Lead',delay:300},{t:'out-info',v:'  Agile · sprint planning · code reviews',delay:50},
+    {t:'cursor'},
+  ],
+  errors:[
+    {t:'prompt',v:'$ '},{t:'cmd',v:'gouta hire --salary 10000',delay:500},
+    {t:'out-err',v:'✗ SalaryTooLowException',delay:600},
+    {t:'out-warn',v:'→ Valid range: 45000–55000/year or 350–500/day',delay:200},
+    {t:'spacer'},
+    {t:'prompt',v:'$ '},{t:'cmd',v:'gouta hire --compensation equity-only',delay:800},
+    {t:'out-err',v:'✗ EquityOnlyException: 402 Payment Required',delay:500},
+    {t:'out-warn',v:'→ Pay people in money, not dreams.',delay:200},
+    {t:'spacer'},
+    {t:'prompt',v:'$ '},{t:'cmd',v:'gouta send --task "8-hour unpaid test"',delay:900},
+    {t:'out-err',v:'✗ UnpaidTestException: 403 Forbidden',delay:500},
+    {t:'out-warn',v:'→ github.com/monambengouta exists. Use it.',delay:200},
+    {t:'spacer'},
+    {t:'out-info',v:'→ Run: gouta hire --type full-time --salary 50000',delay:600},
+    {t:'cursor'},
+  ]
+};
+const termTimers={};
+function renderTerminal(tab){
+  const el=document.getElementById('lines-'+tab);
+  if(!el||el.dataset.rendered)return;
+  el.dataset.rendered='1';
+  const lines=termData[tab];
+  let delay=300;
+  lines.forEach(line=>{
+    delay+=line.delay||0;
+    setTimeout(()=>{
+      if(line.t==='spacer'){el.innerHTML+='<br/>';return}
+      if(line.t==='cursor'){el.innerHTML+=`<span class="blink-cur"></span>`;return}
+      if(line.t==='prompt'){
+        let s=el.querySelector('.current-line');
+        if(!s){s=document.createElement('span');s.className='current-line';el.appendChild(s)}
+        s.innerHTML=`<span class="prompt">${line.v}</span>`;
+        return;
+      }
+      if(line.t==='cmd'){
+        let s=el.querySelector('.current-line');
+        if(s){
+          const txt=line.v;let i=0;
+          const iv=setInterval(()=>{
+            s.innerHTML=`<span class="prompt">$ </span><span class="cmd">${txt.slice(0,i+1)}</span>`;
+            i++;
+            if(i>=txt.length){clearInterval(iv);s.classList.remove('current-line');el.innerHTML+='\n';const br=document.createElement('br');el.appendChild(br)}
+          },18);
+        }
+        return;
+      }
+      const colorMap={'out-ok':'out-ok','out-err':'out-err','out-warn':'out-warn','out-info':'out-info','out-t':'out-t'};
+      const span=document.createElement('span');
+      span.className=colorMap[line.t]||'';
+      span.textContent=line.v;
+      span.style.opacity='0';span.style.transform='translateX(-6px)';span.style.display='block';span.style.transition='all .25s ease';
+      el.appendChild(span);
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{span.style.opacity='1';span.style.transform='none'}));
+      el.appendChild(document.createElement('br'));
+    },delay);
+    delay+=50;
+  });
+}
+function switchTab(tab){
+  document.querySelectorAll('.ttab').forEach(t=>t.classList.remove('on'));
+  document.querySelectorAll('.term-panel').forEach(p=>p.classList.remove('on'));
+  document.querySelector(`.ttab[onclick="switchTab('${tab}')"]`).classList.add('on');
+  document.getElementById('tab-'+tab).classList.add('on');
+  renderTerminal(tab);
+}
+
+const termObs=new IntersectionObserver(entries=>{
+  if(entries[0].isIntersecting){
+    renderTerminal('hire');
+    termObs.disconnect();
+  }
+},{threshold:.2});
+const termSec=document.getElementById('terminal-sec');
+if(termSec)termObs.observe(termSec);
+
+/* ══════════════════════════════════════
+   SEQUENCE DIAGRAM ENGINE
+   "The Hiring Protocol™"
+══════════════════════════════════════ */
+(function(){
+  const C={default:'#6B6490',violet:'#C084FC',green:'#4ADE80',red:'#F87171',yellow:'#FDE047'};
+
+  const STEPS=[
+    {from:'hr',   to:'gouta',  label:'👀  spotted on LinkedIn',             color:'default', delay:500},
+    {from:'hr',   to:'hr',     label:'💬  "Are you still looking?"',         color:'violet',  self:true, delay:400},
+    {from:'hr',   to:'cto',    label:'📧  forwarded CV',                     color:'default', delay:450},
+    {from:'cto',  to:'cto',    label:'🤔  actually reads the CV',            color:'violet',  self:true, delay:600},
+    {from:'cto',  to:'gouta',  label:'🔥  "Impressive stack!"',              color:'violet',  delay:450},
+    {from:'gouta',to:'cto',    label:'✅  200 OK · ack()',                   color:'green',   delay:300},
+    // ─── LOOP start
+    {type:'loop-start', id:'lp1', delay:150},
+    {from:'hr',   to:'gouta',  label:'📞  "Quick 15-min call?"',             color:'default', delay:350},
+    {from:'gouta',to:'hr',     label:'⏱️   becomes 47 minutes',             color:'yellow',  delay:450},
+    {from:'hr',   to:'gouta',  label:'📋  "Send me your resume"',            color:'default', delay:350},
+    {from:'gouta',to:'hr',     label:'🤦  *github.com link exists*',         color:'red',     delay:350},
+    {type:'loop-end', id:'lp1', delay:100},
+    // ─── Tech interview
+    {from:'cto',  to:'gouta',  label:'🧪  schedule tech interview',          color:'violet',  delay:450},
+    {from:'gouta',to:'cto',    label:'💡  "Sure, what\'s the stack?"',        color:'green',   delay:300},
+    {from:'cto',  to:'gouta',  label:'⚙️   Node / Postgres / Redis',          color:'violet',  delay:300},
+    {from:'gouta',to:'cto',    label:'😎  "Been in prod since 2022"',        color:'green',   delay:350},
+    {from:'cto',  to:'team',   label:'🗣️   "Vibe check him"',                 color:'violet',  delay:400},
+    {from:'team', to:'gouta',  label:'🎲  random system-design Q',           color:'default', delay:400},
+    {from:'gouta',to:'team',   label:'📐  live-codes microservice',          color:'green',   delay:350},
+    // ─── ALT start
+    {type:'alt-start', id:'alt1', delay:150},
+    {from:'team', to:'cto',    label:'🎉  "He knows tRPC!"',                 color:'violet',  delay:400},
+    {from:'cto',  to:'ceo',    label:'📢  "We\'re hiring him"',              color:'default', delay:400},
+    {from:'ceo',  to:'hr',     label:'💰  approve offer',                    color:'default', delay:350},
+    {from:'hr',   to:'gouta',  label:'🎁  offer: 45–55K€/yr',               color:'violet',  delay:400},
+    {from:'gouta',to:'hr',     label:'🚀  200 OK · ACCEPTED',               color:'green',   delay:300},
+    {from:'gouta',to:'team',   label:'👋  ships on Day 1',                   color:'green',   delay:400},
+    {from:'team', to:'cto',    label:'🏆  "Best hire ever"',                 color:'green',   delay:300},
+    {type:'alt-else', label:'else [budget freeze just happened]', id:'alt1', delay:100},
+    {from:'cto',  to:'hr',     label:'💀  "budget freeze lol"',              color:'red',     delay:400},
+    {from:'hr',   to:'gouta',  label:'📭  "We\'ll keep you posted :)"',      color:'red',     delay:350},
+    {from:'gouta',to:'gouta',  label:'👻  408 Timeout · ghosted',            color:'yellow',  self:true, delay:400},
+    {type:'alt-end', id:'alt1', delay:100},
+  ];
+
+  let seqStarted=false;
+  const ROW_H=32;
+  const ACTOR_H=92;
+
+  function getActorX(id){
+    const el=document.getElementById('actor-'+id);
+    const canvas=document.getElementById('seqCanvas');
+    if(!el||!canvas)return 0;
+    const er=el.getBoundingClientRect();
+    const cr=canvas.getBoundingClientRect();
+    return er.left-cr.left+er.width/2;
+  }
+
+  function initDiagram(){
+    const canvas=document.getElementById('seqCanvas');
+    if(!canvas)return;
+    const drawable=STEPS.filter(s=>!s.type||s.type==='alt-else');
+    const totalH=ACTOR_H+drawable.length*ROW_H+80;
+    document.querySelectorAll('.lifeline').forEach(ll=>{
+      ll.style.height=(totalH-ACTOR_H)+'px';
+    });
+    canvas.style.height=totalH+'px';
+    const svg=document.getElementById('seqSvg');
+    if(svg){svg.style.top=ACTOR_H+'px';svg.style.height=(totalH-ACTOR_H)+'px';}
+    const tot=STEPS.filter(s=>!s.type||s.type==='alt-else').length;
+    const el=document.getElementById('stepTotal');
+    if(el)el.textContent=tot;
+  }
+
+  let drawRow=0, msgCount=0;
+  const loopMeta={}, altMeta={};
+
+  function animateStep(idx){
+    if(idx>=STEPS.length)return;
+    const s=STEPS[idx];
+    const delay=s.delay||300;
+    const svg=document.getElementById('seqSvg');
+    const canvas=document.getElementById('seqCanvas');
+    if(!svg||!canvas)return;
+
+    setTimeout(()=>{
+      if(s.type==='loop-start'){loopMeta[s.id]={startRow:drawRow};animateStep(idx+1);return;}
+      if(s.type==='loop-end'){
+        const lm=loopMeta[s.id];
+        if(lm){
+          const W=canvas.offsetWidth-8;
+          const y1=lm.startRow*ROW_H-8;const y2=drawRow*ROW_H+8;
+          const rect=mkSvg('rect',{x:4,y:y1,width:W,height:y2-y1,fill:'rgba(253,224,71,.05)',stroke:'rgba(253,224,71,.3)','stroke-dasharray':'4,3',rx:6,opacity:0});
+          svg.insertBefore(rect,svg.firstChild);
+          const t=mkSvg('text',{x:12,y:y1+14,fill:'#FDE047','font-family':"'JetBrains Mono',monospace",'font-size':9,opacity:0});
+          t.textContent='loop  [every recruiter ever]';
+          svg.appendChild(t);
+          raf(()=>{rect.setAttribute('opacity','0.9');t.setAttribute('opacity','1');});
+        }
+        animateStep(idx+1);return;
+      }
+      if(s.type==='alt-start'){altMeta[s.id]={startRow:drawRow};animateStep(idx+1);return;}
+      if(s.type==='alt-else'){
+        if(!altMeta[s.id])altMeta[s.id]={startRow:drawRow};
+        altMeta[s.id].elseRow=drawRow;
+        const W=canvas.offsetWidth-8;
+        const y=drawRow*ROW_H-4;
+        const divLine=mkSvg('line',{x1:4,y1:y,x2:W,y2:y,stroke:'rgba(248,113,113,.4)','stroke-dasharray':'4,3',opacity:0});
+        svg.appendChild(divLine);
+        const t=mkSvg('text',{x:12,y:y+12,fill:'#F87171','font-family':"'JetBrains Mono',monospace",'font-size':9,opacity:0});
+        t.textContent=s.label||'else';
+        svg.appendChild(t);
+        raf(()=>{divLine.setAttribute('opacity','1');t.setAttribute('opacity','1');});
+        animateStep(idx+1);return;
+      }
+      if(s.type==='alt-end'){
+        const am=altMeta[s.id];
+        if(am){
+          const W=canvas.offsetWidth-8;
+          const y1=am.startRow*ROW_H-8;const y2=drawRow*ROW_H+8;
+          const rect=mkSvg('rect',{x:4,y:y1,width:W,height:y2-y1,fill:'rgba(248,113,113,.03)',stroke:'rgba(248,113,113,.3)','stroke-dasharray':'4,3',rx:6,opacity:0});
+          svg.insertBefore(rect,svg.firstChild);
+          const t=mkSvg('text',{x:12,y:y1+13,fill:'#F87171','font-family':"'JetBrains Mono',monospace",'font-size':9,opacity:0});
+          t.textContent='alt';
+          svg.appendChild(t);
+          raf(()=>{rect.setAttribute('opacity','0.8');t.setAttribute('opacity','1');});
+        }
+        animateStep(idx+1);return;
+      }
+
+      // Normal arrow
+      const col=C[s.color]||C.default;
+      const y=drawRow*ROW_H+ROW_H/2;
+      const x1=getActorX(s.from);
+      const x2=getActorX(s.to);
+      const isSelf=s.self||(Math.abs(x1-x2)<2);
+
+      if(isSelf){
+        const lx=x1;
+        const path=mkSvg('path',{d:`M${lx},${y} C${lx+60},${y} ${lx+60},${y+24} ${lx},${y+24}`,fill:'none',stroke:col,'stroke-width':'1.5',opacity:0});
+        svg.appendChild(path);
+        const arr=mkSvg('polygon',{points:`${lx-5},${y+20} ${lx},${y+24} ${lx+5},${y+20}`,fill:col,opacity:0});
+        svg.appendChild(arr);
+        const lbl=mkSvg('text',{x:lx+8,y:y-5,fill:col,'font-family':"'JetBrains Mono',monospace",'font-size':'9.5',opacity:0});
+        lbl.textContent=s.label;
+        svg.appendChild(lbl);
+        raf(()=>{path.setAttribute('opacity','1');arr.setAttribute('opacity','1');lbl.setAttribute('opacity','1');});
+      } else {
+        const goRight=x2>x1;
+        const lx1=goRight?x1+2:x1-2, lx2=goRight?x2-8:x2+8;
+        const line=mkSvg('line',{x1:lx1,y1:y,x2:lx2,y2:y,stroke:col,'stroke-width':'1.5',opacity:0});
+        if(s.color==='return')line.setAttribute('stroke-dasharray','5,3');
+        svg.appendChild(line);
+        const pts=goRight?`${x2-8},${y-5} ${x2},${y} ${x2-8},${y+5}`:`${x2+8},${y-5} ${x2},${y} ${x2+8},${y+5}`;
+        const arr=mkSvg('polygon',{points:pts,fill:col,opacity:0});
+        svg.appendChild(arr);
+        const midX=(x1+x2)/2;
+        const lblLen=s.label.length*5.6;
+        const bg=mkSvg('rect',{x:midX-lblLen/2-3,y:y-19,width:lblLen+6,height:14,fill:'#0F0D1A',rx:2,opacity:0});
+        svg.appendChild(bg);
+        const lbl=mkSvg('text',{x:midX,y:y-8,'text-anchor':'middle',fill:col,'font-family':"'JetBrains Mono',monospace",'font-size':'9.5',opacity:0});
+        lbl.textContent=s.label;
+        svg.appendChild(lbl);
+        raf(()=>{line.setAttribute('opacity','1');arr.setAttribute('opacity','1');bg.setAttribute('opacity','0.9');lbl.setAttribute('opacity','1');});
+      }
+
+      document.querySelectorAll('.actor-box').forEach(b=>b.classList.remove('active'));
+      const bF=document.getElementById('box-'+s.from);
+      const bT=document.getElementById('box-'+s.to);
+      if(bF&&s.from!=='gouta')bF.classList.add('active');
+      if(bT&&s.to!=='gouta')bT.classList.add('active');
+
+      drawRow++;msgCount++;
+      const sn=document.getElementById('stepNum');
+      if(sn)sn.textContent=msgCount;
+      animateStep(idx+1);
+    },delay);
+  }
+
+  function mkSvg(tag,attrs){
+    const el=document.createElementNS('http://www.w3.org/2000/svg',tag);
+    for(const[k,v]of Object.entries(attrs))el.setAttribute(k,v);
+    return el;
+  }
+  function raf(fn){requestAnimationFrame(()=>requestAnimationFrame(fn));}
+
+  function startSeq(){
+    if(seqStarted)return;
+    seqStarted=true;
+    initDiagram();
+    setTimeout(()=>animateStep(0),500);
+  }
+
+  window.addEventListener('load',initDiagram);
+  const seqObs=new IntersectionObserver(entries=>{
+    if(entries[0].isIntersecting){startSeq();seqObs.disconnect();}
+  },{threshold:.1});
+  const seqSec=document.getElementById('seq-section');
+  if(seqSec)seqObs.observe(seqSec);
+})();
+/* ══ CURRENCY TOGGLE ══ */
+const PRICING={
+  int:{
+    freelance:{ val:'350–500', unit:'€/day',  per:'4-day minimum · billed weekly' },
+    fulltime: { val:'45–55K',  unit:'€/year', per:'Remote or hybrid · immediate availability' },
+    project:  { val:'Custom',  unit:'quote',  per:'Scoped deliverables · fixed timeline' },
+  },
+  tn:{
+    freelance:{ val:'1,200–1,700', unit:'TND/day',  per:'Minimum 4 jours · facturation hebdomadaire' },
+    fulltime: { val:'4,500–6,000', unit:'TND/mois', per:'Télétravail ou hybride · disponible immédiatement' },
+    project:  { val:'Sur devis',   unit:'TND',      per:'Livrables définis · délai fixe' },
+  }
+};
+let currentCurrency='int';
+function setCurrency(mode){
+  if(mode===currentCurrency)return;
+  currentCurrency=mode;
+  // toggle buttons
+  document.getElementById('tog-int').classList.toggle('on',mode==='int');
+  document.getElementById('tog-tn').classList.toggle('on',mode==='tn');
+  const note=document.getElementById('tn-note');
+  note.classList.toggle('show',mode==='tn');
+
+  const d=PRICING[mode];
+  function animPrice(valId,unitId,perId,data){
+    const vEl=document.getElementById(valId);
+    const uEl=document.getElementById(unitId);
+    const pEl=document.getElementById(perId);
+    if(vEl){
+      vEl.style.animation='none';
+      requestAnimationFrame(()=>{
+        vEl.style.animation='price-flip .3s cubic-bezier(0.16,1,0.3,1) forwards';
+        vEl.textContent=data.val;
+      });
+    }
+    if(uEl){
+      const inner=uEl.querySelector('span')||uEl;
+      inner.style.animation='none';
+      requestAnimationFrame(()=>{
+        inner.style.animation='price-flip .3s cubic-bezier(0.16,1,0.3,1) .05s forwards';
+        inner.textContent=data.unit;
+      });
+    }
+    if(pEl){
+      pEl.style.animation='none';
+      requestAnimationFrame(()=>{
+        pEl.style.animation='price-flip .3s cubic-bezier(0.16,1,0.3,1) .1s forwards';
+        pEl.textContent=data.per;
+      });
+    }
+  }
+  animPrice('price-freelance','unit-freelance','per-freelance',d.freelance);
+  animPrice('price-fulltime', 'unit-fulltime', 'per-fulltime', d.fulltime);
+  animPrice('price-project',  'unit-project',  'per-project',  d.project);
+}
+
+/* ══ THEME DETECTION & TOGGLE ══ */
+(function(){
+  const saved=localStorage.getItem('theme');
+  const osDark=window.matchMedia('(prefers-color-scheme:dark)').matches;
+  const initial=saved||(osDark?'dark':'light');
+  document.documentElement.setAttribute('data-theme',initial);
+  updateThemeBtn(initial);
+  window.matchMedia('(prefers-color-scheme:dark)').addEventListener('change',e=>{
+    if(!localStorage.getItem('theme')){
+      const t=e.matches?'dark':'light';
+      document.documentElement.setAttribute('data-theme',t);
+      updateThemeBtn(t);
+    }
+  });
+})();
+function toggleTheme(){
+  const cur=document.documentElement.getAttribute('data-theme')||'light';
+  const next=cur==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',next);
+  localStorage.setItem('theme',next);
+  updateThemeBtn(next);
+}
+function updateThemeBtn(theme){
+  const btn=document.getElementById('theme-btn');
+  if(btn)btn.textContent=theme==='dark'?'☀️':'🌙';
+}
+</script>
+</body>
+</html>
